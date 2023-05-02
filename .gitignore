@@ -60,3 +60,6 @@ crashlytics-build.properties
 
 #ignore krita autosave files
 *.kra~
+
+#ignore krita png autosaves
+*.png~
