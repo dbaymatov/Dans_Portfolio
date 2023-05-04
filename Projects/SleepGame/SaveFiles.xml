@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<SaveFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <username />
+  <tutorial>true</tutorial>
+  <allIslands>false</allIslands>
+  <results>true</results>
+  <islandDataList>
+    <IslandDataContainer>
+      <complete>false</complete>
+      <islandCount>0</islandCount>
+      <sceneItems />
+    </IslandDataContainer>
+    <IslandDataContainer>
+      <complete>false</complete>
+      <islandCount>0</islandCount>
+      <sceneItems />
+    </IslandDataContainer>
+    <IslandDataContainer>
+      <complete>false</complete>
+      <islandCount>0</islandCount>
+      <sceneItems />
+    </IslandDataContainer>
+    <IslandDataContainer>
+      <complete>true</complete>
+      <islandCount>3</islandCount>
+      <sceneItems>
+        <InventoryItem>
+          <id>0</id>
+          <itemName>television</itemName>
+          <question>I typically...</question>
+          <questionAnsweres>
+            <string>Limit my use of light-emitting electronic devices for at least an hour before bed</string>
+            <string>Use light-emitting electronic devices before bed</string>
+          </questionAnsweres>
+          <goodAnswer>Great! Light from electronic devices can suppress melatonin, our sleep hormone. </goodAnswer>
+          <badAnswer>Light from electronic devices can suppress melatonin, our sleep hormone. Avoid using light-emitting electronic devices (like laptops, tablets, smart phones) for at least 1 hour before your set bedtime.</badAnswer>
+          <shortDesc>Set media limits before bed</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>1</id>
+          <itemName>GrandfatherClock</itemName>
+          <question>When i’m having trouble falling asleep, I usually...</question>
+          <questionAnsweres>
+            <string>Get out of bed and engage in relaxing activities until I am sleepy</string>
+            <string>Stay in bed</string>
+          </questionAnsweres>
+          <goodAnswer>Great! Struggling to fall asleep just leads to frustration. If you’re not asleep after 20 minutes, get out of bed, go to another room, and do something relaxing, like reading or listening to music until you are tired enough to sleep.</goodAnswer>
+          <badAnswer>Struggling to fall asleep just leads to frustration. If you’re not asleep after 20 minutes, get out of bed, go to another room, and do something relaxing, like reading or listening to music until you are tired enough to sleep.</badAnswer>
+          <shortDesc>Get out of bed if you are not sleepy</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>2</id>
+          <itemName>birdhouse</itemName>
+          <question>When i’m having trouble falling asleep, I...</question>
+          <questionAnsweres>
+            <string>avoid looking at the time </string>
+            <string>check the time</string>
+          </questionAnsweres>
+          <goodAnswer>Nice! Worrying about whether you’re getting enough sleep only makes it harder to sleep.</goodAnswer>
+          <badAnswer>Worrying about whether you’re getting enough sleep only makes it harder to sleep. Try turning clock faces away from your bed and placing electronic devices out of reach. Rather than trying to “fall asleep” just aim to be restful.</badAnswer>
+          <shortDesc>Dont watch the clock at night</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+      </sceneItems>
+    </IslandDataContainer>
+    <IslandDataContainer>
+      <complete>false</complete>
+      <islandCount>0</islandCount>
+      <sceneItems />
+    </IslandDataContainer>
+    <IslandDataContainer>
+      <complete>false</complete>
+      <islandCount>0</islandCount>
+      <sceneItems>
+        <InventoryItem>
+          <id>0</id>
+          <itemName>television</itemName>
+          <question>I typically...</question>
+          <questionAnsweres>
+            <string>Limit my use of light-emitting electronic devices for at least an hour before bed</string>
+            <string>Use light-emitting electronic devices before bed</string>
+          </questionAnsweres>
+          <goodAnswer>Great! Light from electronic devices can suppress melatonin, our sleep hormone. </goodAnswer>
+          <badAnswer>Light from electronic devices can suppress melatonin, our sleep hormone. Avoid using light-emitting electronic devices (like laptops, tablets, smart phones) for at least 1 hour before your set bedtime.</badAnswer>
+          <shortDesc>Set media limits before bed</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>1</id>
+          <itemName>GrandfatherClock</itemName>
+          <question>When i’m having trouble falling asleep, I usually...</question>
+          <questionAnsweres>
+            <string>Get out of bed and engage in relaxing activities until I am sleepy</string>
+            <string>Stay in bed</string>
+          </questionAnsweres>
+          <goodAnswer>Great! Struggling to fall asleep just leads to frustration. If you’re not asleep after 20 minutes, get out of bed, go to another room, and do something relaxing, like reading or listening to music until you are tired enough to sleep.</goodAnswer>
+          <badAnswer>Struggling to fall asleep just leads to frustration. If you’re not asleep after 20 minutes, get out of bed, go to another room, and do something relaxing, like reading or listening to music until you are tired enough to sleep.</badAnswer>
+          <shortDesc>Get out of bed if you are not sleepy</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>2</id>
+          <itemName>birdhouse</itemName>
+          <question>When i’m having trouble falling asleep, I...</question>
+          <questionAnsweres>
+            <string>avoid looking at the time </string>
+            <string>check the time</string>
+          </questionAnsweres>
+          <goodAnswer>Nice! Worrying about whether you’re getting enough sleep only makes it harder to sleep.</goodAnswer>
+          <badAnswer>Worrying about whether you’re getting enough sleep only makes it harder to sleep. Try turning clock faces away from your bed and placing electronic devices out of reach. Rather than trying to “fall asleep” just aim to be restful.</badAnswer>
+          <shortDesc>Dont watch the clock at night</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+      </sceneItems>
+    </IslandDataContainer>
+  </islandDataList>
+  <chosenAdviceList />
+</SaveFile>
