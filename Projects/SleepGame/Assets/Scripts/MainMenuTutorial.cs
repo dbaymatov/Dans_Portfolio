@@ -8,7 +8,6 @@ public class MainMenuTutorial : MonoBehaviour
 {
 
     int currentInstruction=0;
-    [SerializeField] LogInManager logInManager;
     [SerializeField]List<GameObject> Instructions;
     [SerializeField] GameObject InstructionsPanel;
     [SerializeField] GameObject MainMenuPanel;
