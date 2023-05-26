@@ -1,0 +1,383 @@
+<?xml version="1.0"?>
+<SaveContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <gameStage>7</gameStage>
+  <character>1</character>
+  <saveList1>
+    <ValueClass>
+      <valueName>ABUNDANCE</valueName>
+      <valueDescription>To have all the resources to achieve my life goals</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>5</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>ACHIEVEMENT</valueName>
+      <valueDescription>To have important accomplishments</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>2</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>ADAPTABILITY</valueName>
+      <valueDescription>To adjust to new circumstances easily</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>5</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>ADVENTURE</valueName>
+      <valueDescription>To have new and exciting experiences</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>5</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>AUTONOMY</valueName>
+      <valueDescription>To be self-determined and independent</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>3</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>BALANCE</valueName>
+      <valueDescription>To be in a state of equilibrium</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>6</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>BELONGING</valueName>
+      <valueDescription>To feel included in a larger group</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>4</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>CHALLENGE</valueName>
+      <valueDescription>To take on difficult tasks and problems</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>4</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>COMFORT</valueName>
+      <valueDescription>To have a pleasant life</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>2</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>COMPASSION</valueName>
+      <valueDescription>To feel and act on concern for others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>CONFIDENCE</valueName>
+      <valueDescription>To feel secure in myself and my abilities</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>CONTRIBUTION</valueName>
+      <valueDescription>intentional actions that have a positive effect on others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>COOPERATION</valueName>
+      <valueDescription>To work collectively with others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>COURAGE</valueName>
+      <valueDescription>To be brave and strong in the face of adversity</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>CREATIVITY</valueName>
+      <valueDescription>To create new things or ideas</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>CURIOSITY</valueName>
+      <valueDescription>To seek out or experience and learn new things</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>DEDICATION</valueName>
+      <valueDescription>feeling of strong loyalty to something</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>DEPENDABILITY</valueName>
+      <valueDescription>To be reliable and trustworthy</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>FORGIVENESS</valueName>
+      <valueDescription>To overcome negative feelings towards others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>FRIENDLINESS</valueName>
+      <valueDescription>To be approachable and warm towards others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>FUN</valueName>
+      <valueDescription>To be approachable and warm towards others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>GENEROSITY</valueName>
+      <valueDescription>To give what I have to others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>GENUINENESS</valueName>
+      <valueDescription>To act in a manner that is true to who I am</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>GRATITUDE</valueName>
+      <valueDescription>To be thankful and appreciative</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>GROWTH</valueName>
+      <valueDescription>To keep challenging myself</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>HONESTY</valueName>
+      <valueDescription>To be truthful</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>HUMILITY</valueName>
+      <valueDescription>To be modest and unassuming</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>HUMOR</valueName>
+      <valueDescription>To see the amusing side of myself and the world</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>IMAGINATION</valueName>
+      <valueDescription>To have dreams and see possibilities</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>INNER PEACE</valueName>
+      <valueDescription>To experience personal space</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>INNOVATION</valueName>
+      <valueDescription>To introduce original and creative ideas</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>INTEGRITY</valueName>
+      <valueDescription>adherence to moral and ethical principles &amp;amp; values</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>INTELLIGENCE</valueName>
+      <valueDescription>To keep my mind sharp and active</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>INTIMACY</valueName>
+      <valueDescription>To share my innermost experiences with others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>KINDNESS</valueName>
+      <valueDescription>To show warmth and consideration towards others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>LEADERSHIP</valueName>
+      <valueDescription>To inspire and guide others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>LEARNING</valueName>
+      <valueDescription>To seek out new knowledge</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>LOVING</valueName>
+      <valueDescription>To give love to others</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>MINDFULNESS</valueName>
+      <valueDescription>To live consciously in the present moment</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>NON VIOLENCE</valueName>
+      <valueDescription>To conduct myself non-destructively</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>OPENNESS</valueName>
+      <valueDescription>To be open to new experiences or ideas and opinions</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>OPTIMISM</valueName>
+      <valueDescription>To have a positive mindset</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>PASSION</valueName>
+      <valueDescription>a strong liking for some activity, object, or concept</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>PATIENCE</valueName>
+      <valueDescription>To show restraint during frustrating times</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>PURPOSE</valueName>
+      <valueDescription>To have meaning and direction in life</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>RATIONALITY</valueName>
+      <valueDescription>To be guided by reason and logic and evidence</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>RESILIENCE</valueName>
+      <valueDescription>To be well rooted during difficult times</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>SELF ACCEPTANCE</valueName>
+      <valueDescription>To accept myself as I am</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>SPIRITUALITY</valueName>
+      <valueDescription>feeling connected with something bigger than yourself</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>STRUCTURE</valueName>
+      <valueDescription>To have a life that is well organized</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>0</value>
+    </ValueClass>
+  </saveList1>
+  <saveList2>
+    <ValueClass>
+      <valueName>BALANCE</valueName>
+      <valueDescription>To be in a state of equilibrium</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>3</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>ADAPTABILITY</valueName>
+      <valueDescription>To adjust to new circumstances easily</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>1</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>ADVENTURE</valueName>
+      <valueDescription>To have new and exciting experiences</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>4</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>ABUNDANCE</valueName>
+      <valueDescription>To have all the resources to achieve my life goals</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>4</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>BELONGING</valueName>
+      <valueDescription>To feel included in a larger group</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>2</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>CHALLENGE</valueName>
+      <valueDescription>To take on difficult tasks and problems</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>4</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>AUTONOMY</valueName>
+      <valueDescription>To be self-determined and independent</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>3</value>
+    </ValueClass>
+  </saveList2>
+  <saveList3>
+    <ValueClass>
+      <valueName>ADVENTURE</valueName>
+      <valueDescription>To have new and exciting experiences</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>4</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>ABUNDANCE</valueName>
+      <valueDescription>To have all the resources to achieve my life goals</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>4</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>CHALLENGE</valueName>
+      <valueDescription>To take on difficult tasks and problems</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>4</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>BALANCE</valueName>
+      <valueDescription>To be in a state of equilibrium</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>3</value>
+    </ValueClass>
+    <ValueClass>
+      <valueName>AUTONOMY</valueName>
+      <valueDescription>To be self-determined and independent</valueDescription>
+      <valueInCompetiteon>false</valueInCompetiteon>
+      <value>3</value>
+    </ValueClass>
+  </saveList3>
+</SaveContainer>

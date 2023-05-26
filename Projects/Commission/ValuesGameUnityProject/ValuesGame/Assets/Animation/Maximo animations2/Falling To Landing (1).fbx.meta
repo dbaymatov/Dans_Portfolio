@@ -1,0 +1,657 @@
+fileFormatVersion: 2
+guid: 2d123ce4298b14d48ac5bc474d03e092
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -203655887218126122
+    second: mixamo.com
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: panther_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: jnt_left_eye
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: jnt_right_eye
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: panther_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: T-Pose (1)(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_basemesh
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0.56878227, z: -0.036055163}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pantherMesh:Panther_CharacterEyes
+      parentName: panther_basemesh
+      position: {x: -0, y: -0.5639843, z: 0.036055163}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: leftEye
+      parentName: pantherMesh:Panther_CharacterEyes
+      position: {x: -0.05054711, y: 0.9268073, z: 0.07403128}
+      rotation: {x: 3.6082248e-16, y: 2.7755576e-16, z: 2.7755576e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: rightEye
+      parentName: pantherMesh:Panther_CharacterEyes
+      position: {x: 0.05054711, y: 0.9268073, z: 0.07403128}
+      rotation: {x: 3.6082248e-16, y: 2.7755576e-16, z: 2.7755576e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pantherMesh:ShoesPanther_Character1
+      parentName: panther_basemesh
+      position: {x: -0, y: -0.56878227, z: 0.036055163}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Reference_DONTTOUCH
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0.000000075543134, y: 0.00042106627, z: -0.052176747}
+      rotation: {x: -1.641161e-18, y: 0.0000000026329334, z: -0.00000009148195, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Hips
+      parentName: panther_Reference_DONTTOUCH
+      position: {x: 9.194966e-20, y: 0.4668445, z: 0.050674226}
+      rotation: {x: 0.4994908, y: -0.50050867, z: -0.4994908, w: 0.50050867}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_LeftUpLeg
+      parentName: panther_Hips
+      position: {x: 0.0058844974, y: -0.00042608503, z: 0.07350884}
+      rotation: {x: 0.000120763354, y: 0.0015761395, z: 0.9997868, w: -0.020587126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_LeftLeg
+      parentName: panther_LeftUpLeg
+      position: {x: -0.16827354, y: -0.0000068787185, z: -0.0000000089763645}
+      rotation: {x: -0.017067753, y: 0.0011350833, z: -0.062749915, w: 0.9978827}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_LeftFoot
+      parentName: panther_LeftLeg
+      position: {x: -0.24126424, y: -0.000000015896374, z: -0.000000006344298}
+      rotation: {x: -0.0015192648, y: 0.023736624, z: 0.44609982, w: 0.8946671}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_LeftToeBase
+      parentName: panther_LeftFoot
+      position: {x: -0.07179508, y: -0.0000000012114391, z: 0.000000029095208}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_RightUpLeg
+      parentName: panther_Hips
+      position: {x: 0.0058844974, y: -0.00042608503, z: -0.07350884}
+      rotation: {x: 0.0015674512, y: -0.000120838595, z: 0.020584032, w: 0.9997869}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_RightLeg
+      parentName: panther_RightUpLeg
+      position: {x: 0.16827354, y: 0.000008041153, z: -0.000000010392928}
+      rotation: {x: -0.017047694, y: 0.0011350597, z: -0.06274634, w: 0.99788326}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_RightFoot
+      parentName: panther_RightLeg
+      position: {x: 0.24126413, y: -0.00000003739336, z: -0.000000002064649}
+      rotation: {x: -0.0015299077, y: 0.023739746, z: 0.44609946, w: 0.8946672}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_RightToeBase
+      parentName: panther_RightFoot
+      position: {x: 0.071795054, y: -0.000000021790242, z: 0.0000000034943732}
+      rotation: {x: 0.000025467685, y: 0.000000034273555, z: -8.72868e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Spine
+      parentName: panther_Hips
+      position: {x: -0.053844407, y: 1.0856618e-10, z: -2.3887381e-17}
+      rotation: {x: 0.000000002949173, y: 0.00000013617152, z: 0.002782437, w: 0.9999961}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Spine1
+      parentName: panther_Spine
+      position: {x: -0.05367144, y: -5.4461127e-11, z: -8.788536e-18}
+      rotation: {x: 2.035e-42, y: -4.691261e-24, z: 4.3368087e-19, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Spine2
+      parentName: panther_Spine1
+      position: {x: -0.05367144, y: -5.4461127e-11, z: 6.266361e-18}
+      rotation: {x: -1.8281372e-10, y: -0.000000044703107, z: 0.0040889615, w: 0.99999166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_LeftShoulder
+      parentName: panther_Spine2
+      position: {x: -0.12881872, y: 0.027179968, z: 0.060040288}
+      rotation: {x: -0.40159196, y: 0.42924652, z: 0.56885874, w: 0.57521397}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_LeftArm
+      parentName: panther_LeftShoulder
+      position: {x: -0.081897475, y: -0.0000000094677635, z: -1.1392051e-10}
+      rotation: {x: 0.5905905, y: 0.14221671, z: -0.12745044, w: 0.78404963}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_LeftForeArm
+      parentName: panther_LeftArm
+      position: {x: -0.16757327, y: 0.00000006851468, z: 0.0000000895612}
+      rotation: {x: -0.000000057586405, y: -7.9695495e-12, z: 2.9841494e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_LeftHand
+      parentName: panther_LeftForeArm
+      position: {x: -0.16016595, y: 0.000000044889905, z: 0.0000000396521}
+      rotation: {x: 0, y: 0, z: 0.0000015163007, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_RightShoulder
+      parentName: panther_Spine2
+      position: {x: -0.12881872, y: 0.027179968, z: -0.060040288}
+      rotation: {x: 0.4292466, y: 0.40159193, z: -0.57521397, w: 0.5688587}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_RightArm
+      parentName: panther_RightShoulder
+      position: {x: 0.081897475, y: 0.0000000094677635, z: 1.1392046e-10}
+      rotation: {x: 0.59058845, y: 0.14221737, z: -0.1274504, w: 0.78405094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_RightForeArm
+      parentName: panther_RightArm
+      position: {x: 0.16757332, y: 0.00000005781668, z: 0.00000006388254}
+      rotation: {x: -0.000000679588, y: -7.9641675e-12, z: 2.9835523e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_RightHand
+      parentName: panther_RightForeArm
+      position: {x: 0.16016592, y: -0.000000014568524, z: -0.0000000012365111}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Neck
+      parentName: panther_Spine2
+      position: {x: -0.18033971, y: 9.777299e-10, z: 3.3149796e-17}
+      rotation: {x: 0, y: -0, z: -0.052471563, w: 0.9986224}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Head
+      parentName: panther_Neck
+      position: {x: -0.14782949, y: 0.0000000033029997, z: -5.7571764e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jnt_left_eye
+      parentName: panther_Head
+      position: {x: 0.01964177, y: 0.051968955, z: 0.05054711}
+      rotation: {x: 0.52179843, y: -0.47720686, z: -0.52179843, w: -0.47720686}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jnt_right_eye
+      parentName: panther_Head
+      position: {x: 0.01964177, y: 0.051968955, z: -0.05054711}
+      rotation: {x: 0.52179843, y: -0.47720686, z: -0.52179843, w: -0.47720686}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_Reference
+      parentName: T-Pose (1)(Clone)
+      position: {x: -0, y: 0.00021171986, z: -0.036055163}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_HipsEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: -0, y: 0.46095917, z: 0.050260123}
+      rotation: {x: 3.061617e-17, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftAnkleEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: -0.072109774, y: 0.05260484, z: 0.026317626}
+      rotation: {x: 0.0010518541, y: -0.0256936, z: -0.022839786, w: 0.99940836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightAnkleEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: 0.07210977, y: 0.05260505, z: 0.02631758}
+      rotation: {x: 0.0010517909, y: 0.025671247, z: 0.022818107, w: 0.99940944}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftWristEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: -0.44561866, y: 0.71660763, z: 0.043341067}
+      rotation: {x: -0.13602148, y: 0.09516809, z: 0.04901492, w: 0.9849055}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightWristEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: 0.44561884, y: 0.7166074, z: 0.043341253}
+      rotation: {x: -0.13602485, y: -0.09516845, z: -0.049015783, w: 0.9849049}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftKneeEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: -0.072880626, y: 0.29268706, z: 0.050156463}
+      rotation: {x: 0.0494835, y: -0.01541714, z: 0.000835697, w: 0.9986556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightKneeEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: 0.07288062, y: 0.29268703, z: 0.050159216}
+      rotation: {x: 0.049489338, y: 0.015406959, z: -0.0008361439, w: 0.9986555}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftElbowEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: -0.28912342, y: 0.72792476, z: 0.011179719}
+      rotation: {x: -0.13602158, y: 0.095169626, z: 0.049014505, w: 0.9849053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightElbowEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: 0.28912362, y: 0.72792494, z: 0.0111801}
+      rotation: {x: -0.13602488, y: -0.095168695, z: -0.04901562, w: 0.9849049}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_ChestOriginEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: 6.7609905e-20, y: 0.52068883, z: 0.050564613}
+      rotation: {x: -6.548581e-17, y: -6.162976e-33, z: -1.2325952e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_ChestEndEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: -0, y: 0.75726014, z: 0.07489283}
+      rotation: {x: -1.02348685e-16, y: -1.9451892e-32, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftFootEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: -0.07704316, y: 0.00490768, z: 0.079751514}
+      rotation: {x: 0.0010518541, y: -0.0256936, z: -0.022839786, w: 0.99940836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightFootEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: 0.07704315, y: 0.004907909, z: 0.07975146}
+      rotation: {x: 0.0010517909, y: 0.025671247, z: 0.022818107, w: 0.99940944}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftShoulderEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: -0.12383131, y: 0.7524411, z: 0.023758888}
+      rotation: {x: -0.12760778, y: -0.046750035, z: 0.067974836, w: 0.98838764}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightShoulderEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: 0.12383131, y: 0.7524411, z: 0.023758888}
+      rotation: {x: -0.1276107, y: 0.046749517, z: -0.06797412, w: 0.98838735}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_HeadEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: -1.6265085e-16, y: 0.95558745, z: 0.060074132}
+      rotation: {x: 3.061617e-17, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftHipEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: -0.07350884, y: 0.46095917, z: 0.050260123}
+      rotation: {x: 0.00010287581, y: 0.001573768, z: 0.0018663406, w: 0.999997}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightHipEffector
+      parentName: panther_Ctrl_Reference
+      position: {x: 0.07350884, y: 0.46095917, z: 0.050260123}
+      rotation: {x: 0.0001007777, y: -0.0015645863, z: -0.0018664266, w: 0.999997}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_Hips
+      parentName: panther_Ctrl_Reference
+      position: {x: 9.194966e-20, y: 0.4668445, z: 0.050674226}
+      rotation: {x: 8.612732e-17, y: 5.551115e-17, z: 1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftUpLeg
+      parentName: panther_Ctrl_Hips
+      position: {x: -0.07350884, y: -0.005885353, z: -0.00041410446}
+      rotation: {x: 0.00010287581, y: 0.0015737681, z: 0.0018663406, w: 0.999997}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftLeg
+      parentName: panther_Ctrl_LeftUpLeg
+      position: {x: -0, y: -0.16827326, z: 2.220446e-18}
+      rotation: {x: 0.049350537, y: -0.017081017, z: -0.00094867544, w: 0.99863505}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftFoot
+      parentName: panther_Ctrl_LeftLeg
+      position: {x: 8.881784e-18, y: -0.24126387, z: 0}
+      rotation: {x: -0.048777387, y: -0.0113821095, z: -0.022389092, w: 0.99849385}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftToeBase
+      parentName: panther_Ctrl_LeftFoot
+      position: {x: -0.0000000333786, y: -0.047697153, z: 0.053661082}
+      rotation: {x: 2.2365468e-32, y: -0, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightUpLeg
+      parentName: panther_Ctrl_Hips
+      position: {x: 0.07350884, y: -0.005885353, z: -0.00041410446}
+      rotation: {x: 0.0001007777, y: -0.0015645862, z: -0.0018664264, w: 0.999997}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightLeg
+      parentName: panther_Ctrl_RightUpLeg
+      position: {x: 0.000000009536743, y: -0.16827326, z: 0.0000016462802}
+      rotation: {x: 0.049358472, y: 0.017061677, z: 0.0009487925, w: 0.99863493}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightFoot
+      parentName: panther_Ctrl_RightLeg
+      position: {x: -0.0000000047683715, y: -0.24126387, z: 0}
+      rotation: {x: -0.04878275, y: 0.011369009, z: 0.022368828, w: 0.9984942}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightToeBase
+      parentName: panther_Ctrl_RightFoot
+      position: {x: 0.000004496574, y: -0.047697153, z: 0.053661082}
+      rotation: {x: 2.2365468e-32, y: -0, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_Spine
+      parentName: panther_Ctrl_Hips
+      position: {x: -2.4651903e-34, y: 0.0538443, z: -0.000109616514}
+      rotation: {x: -2.3201926e-16, y: 1.6610672e-16, z: 1.6526931e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_Spine1
+      parentName: panther_Ctrl_Spine
+      position: {x: -1.1555579e-34, y: 0.05366989, z: -0.000407933}
+      rotation: {x: -2.3201926e-16, y: 1.6610672e-16, z: 1.6526931e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_Spine2
+      parentName: panther_Ctrl_Spine1
+      position: {x: -1.1555579e-34, y: 0.05366989, z: -0.000407933}
+      rotation: {x: -2.0816682e-17, y: 1.9470277e-16, z: 1.3570893e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftShoulder
+      parentName: panther_Ctrl_Spine2
+      position: {x: -0.060040288, y: 0.12923153, z: 0.025144085}
+      rotation: {x: -1.0408341e-17, y: 5.551115e-17, z: -4.8572257e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftArm
+      parentName: panther_Ctrl_LeftShoulder
+      position: {x: -0.06379102, y: -0.004819031, z: -0.05113394}
+      rotation: {x: -0.12760778, y: -0.04675004, z: 0.06797484, w: 0.98838764}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftForeArm
+      parentName: panther_Ctrl_LeftArm
+      position: {x: -0.1675732, y: 1.4210854e-16, z: -2.220446e-18}
+      rotation: {x: 0.0000000971434, y: 0.14310026, z: -0.000000052257725, w: 0.98970824}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_LeftHand
+      parentName: panther_Ctrl_LeftForeArm
+      position: {x: -0.16016592, y: 0, z: 0}
+      rotation: {x: 0.00000002308811, y: -0.000001606494, z: 0.00000019453164, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightShoulder
+      parentName: panther_Ctrl_Spine2
+      position: {x: 0.060040288, y: 0.12923153, z: 0.025144085}
+      rotation: {x: -1.3877788e-17, y: -5.551115e-17, z: 4.6837534e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightArm
+      parentName: panther_Ctrl_RightShoulder
+      position: {x: 0.06379102, y: -0.004819031, z: -0.05113394}
+      rotation: {x: -0.1276107, y: 0.04674952, z: -0.06797413, w: 0.98838735}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightForeArm
+      parentName: panther_Ctrl_RightArm
+      position: {x: 0.1675732, y: 1.4210854e-16, z: -2.220446e-18}
+      rotation: {x: -0.000000401197, y: -0.14309862, z: -0.000002010087, w: 0.9897084}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_RightHand
+      parentName: panther_Ctrl_RightForeArm
+      position: {x: 0.16016592, y: 0, z: 0}
+      rotation: {x: 0.000000027946738, y: 0.00000028002177, z: -0.00000012752697, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_Neck
+      parentName: panther_Ctrl_Spine2
+      position: {x: -6.1629757e-35, y: 0.18031727, z: -0.002845397}
+      rotation: {x: -4.9153484e-32, y: 1.134973e-16, z: 6.67717e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: panther_Ctrl_Head
+      parentName: panther_Ctrl_Neck
+      position: {x: -0, y: 0.14724159, z: 0.013170784}
+      rotation: {x: 8.612732e-17, y: 5.551115e-17, z: 1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 90f62812a7a6e7f48be9c44f35ea04f1, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ScreenWipe
+  m_Controller: {fileID: 9100000, guid: 171775277b579394488e99038cb8bf9c, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 7f9f37174fa8eca459dae726df3b54b2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6b3e5a015c47f72478cba917a52d649b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0a452c04e71d2d2469f548d53f76ef31, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: af349dc506cab4e45b23815bc20f37c8, type: 2}
