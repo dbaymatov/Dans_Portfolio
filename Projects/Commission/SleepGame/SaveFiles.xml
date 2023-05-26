@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<SaveFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <username />
+  <tutorial>true</tutorial>
+  <allIslands>false</allIslands>
+  <results>true</results>
+  <islandDataList>
+    <IslandDataContainer>
+      <complete>false</complete>
+      <islandCount>2</islandCount>
+      <sceneItems>
+        <InventoryItem>
+          <id>0</id>
+          <itemName>faucet</itemName>
+          <question>During the day, I...</question>
+          <questionAnsweres>
+            <string>Limit my caffeine intake</string>
+            <string>Don’t think about how caffeine intake will affect my sleep</string>
+          </questionAnsweres>
+          <goodAnswer>Great! Limiting caffeine intake can prevent you from being awake and alert at bedtime.</goodAnswer>
+          <badAnswer>Consider limiting your caffeine intake during the day to prevent being awake and alert at bedtime. Some people may be able to stretch their consumption to midafternoon, while others might need to cut themselves off much earlier in order to fall asleep easily.</badAnswer>
+          <shortDesc>Limit caffeine intake</shortDesc>
+          <active>true</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>1</id>
+          <itemName>Fishingbowl</itemName>
+          <question>Just before bed, I...</question>
+          <questionAnsweres>
+            <string>Avoid drinking a lot of fluids</string>
+            <string>Drink a lot of fluids </string>
+          </questionAnsweres>
+          <goodAnswer>Great! Sleep experts recommend drinking just enough fluids at night to keep you from waking up thirsty – but not so much and so close to bedtime that you will need to wake up to go to the bathroom. It may be helpful to keep a small cup next to you during the night if you wake up thirsty.</goodAnswer>
+          <badAnswer>Sleep experts recommend drinking just enough fluids at night to keep you from waking up thirsty – but not so much and so close to bedtime that you will need to wake up to go to the bathroom. It may be helpful to keep a small cup next to you during the night if you wake up thirsty.</badAnswer>
+          <shortDesc>Avoid filling up with fluids just before bed</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>2</id>
+          <itemName>FishingRod</itemName>
+          <question>When I wake up, I typically...</question>
+          <questionAnsweres>
+            <string>Go outside and breathe the fresh air</string>
+            <string>Remain indoors until I have to go somewhere</string>
+          </questionAnsweres>
+          <goodAnswer>Great! Getting bright light exposure in the morning helps set our body clocks, and makes us more alert during the day.</goodAnswer>
+          <badAnswer>Getting bright light exposure in the morning helps set our body clocks, and makes us more alert during the day.Try opening curtains to let in direct sunlight as soon as you wake up, taking a short walk outside before breakfast, or drinking your coffee on your balcony or in front of a window.</badAnswer>
+          <shortDesc>Use light to your advantage</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>3</id>
+          <itemName>HoneyJar</itemName>
+          <question>Shortly before sleeping, I tend to eat...</question>
+          <questionAnsweres>
+            <string>A snack or nothing at all</string>
+            <string>A large meal</string>
+          </questionAnsweres>
+          <goodAnswer>Great! You can snack before bed if you need to, but having a large meal before bedtime can make it difficult to sleep.</goodAnswer>
+          <badAnswer>Some people find it helpful to limit large meals before bedtime. You can snack before bed if you need to, but having a large meal before bedtime can make it difficult to sleep.</badAnswer>
+          <shortDesc>Eat dinner several hours before bedtime</shortDesc>
+          <active>true</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+      </sceneItems>
+    </IslandDataContainer>
+    <IslandDataContainer>
+      <complete>false</complete>
+      <islandCount>0</islandCount>
+      <sceneItems />
+    </IslandDataContainer>
+    <IslandDataContainer>
+      <complete>false</complete>
+      <islandCount>0</islandCount>
+      <sceneItems />
+    </IslandDataContainer>
+    <IslandDataContainer>
+      <complete>true</complete>
+      <islandCount>3</islandCount>
+      <sceneItems>
+        <InventoryItem>
+          <id>0</id>
+          <itemName>television</itemName>
+          <question>I typically...</question>
+          <questionAnsweres>
+            <string>Limit my use of light-emitting electronic devices for at least an hour before bed</string>
+            <string>Use light-emitting electronic devices before bed</string>
+          </questionAnsweres>
+          <goodAnswer>Great! Light from electronic devices can suppress melatonin, our sleep hormone. </goodAnswer>
+          <badAnswer>Light from electronic devices can suppress melatonin, our sleep hormone. Avoid using light-emitting electronic devices (like laptops, tablets, smart phones) for at least 1 hour before your set bedtime.</badAnswer>
+          <shortDesc>Set media limits before bed</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>1</id>
+          <itemName>GrandfatherClock</itemName>
+          <question>When i’m having trouble falling asleep, I usually...</question>
+          <questionAnsweres>
+            <string>Get out of bed and engage in relaxing activities until I am sleepy</string>
+            <string>Stay in bed</string>
+          </questionAnsweres>
+          <goodAnswer>Great! Struggling to fall asleep just leads to frustration. If you’re not asleep after 20 minutes, get out of bed, go to another room, and do something relaxing, like reading or listening to music until you are tired enough to sleep.</goodAnswer>
+          <badAnswer>Struggling to fall asleep just leads to frustration. If you’re not asleep after 20 minutes, get out of bed, go to another room, and do something relaxing, like reading or listening to music until you are tired enough to sleep.</badAnswer>
+          <shortDesc>Get out of bed if you are not sleepy</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>2</id>
+          <itemName>birdhouse</itemName>
+          <question>When i’m having trouble falling asleep, I...</question>
+          <questionAnsweres>
+            <string>avoid looking at the time </string>
+            <string>check the time</string>
+          </questionAnsweres>
+          <goodAnswer>Nice! Worrying about whether you’re getting enough sleep only makes it harder to sleep.</goodAnswer>
+          <badAnswer>Worrying about whether you’re getting enough sleep only makes it harder to sleep. Try turning clock faces away from your bed and placing electronic devices out of reach. Rather than trying to “fall asleep” just aim to be restful.</badAnswer>
+          <shortDesc>Dont watch the clock at night</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+      </sceneItems>
+    </IslandDataContainer>
+    <IslandDataContainer>
+      <complete>false</complete>
+      <islandCount>0</islandCount>
+      <sceneItems />
+    </IslandDataContainer>
+    <IslandDataContainer>
+      <complete>false</complete>
+      <islandCount>0</islandCount>
+      <sceneItems>
+        <InventoryItem>
+          <id>0</id>
+          <itemName>television</itemName>
+          <question>I typically...</question>
+          <questionAnsweres>
+            <string>Limit my use of light-emitting electronic devices for at least an hour before bed</string>
+            <string>Use light-emitting electronic devices before bed</string>
+          </questionAnsweres>
+          <goodAnswer>Great! Light from electronic devices can suppress melatonin, our sleep hormone. </goodAnswer>
+          <badAnswer>Light from electronic devices can suppress melatonin, our sleep hormone. Avoid using light-emitting electronic devices (like laptops, tablets, smart phones) for at least 1 hour before your set bedtime.</badAnswer>
+          <shortDesc>Set media limits before bed</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>1</id>
+          <itemName>GrandfatherClock</itemName>
+          <question>When i’m having trouble falling asleep, I usually...</question>
+          <questionAnsweres>
+            <string>Get out of bed and engage in relaxing activities until I am sleepy</string>
+            <string>Stay in bed</string>
+          </questionAnsweres>
+          <goodAnswer>Great! Struggling to fall asleep just leads to frustration. If you’re not asleep after 20 minutes, get out of bed, go to another room, and do something relaxing, like reading or listening to music until you are tired enough to sleep.</goodAnswer>
+          <badAnswer>Struggling to fall asleep just leads to frustration. If you’re not asleep after 20 minutes, get out of bed, go to another room, and do something relaxing, like reading or listening to music until you are tired enough to sleep.</badAnswer>
+          <shortDesc>Get out of bed if you are not sleepy</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+        <InventoryItem>
+          <id>2</id>
+          <itemName>birdhouse</itemName>
+          <question>When i’m having trouble falling asleep, I...</question>
+          <questionAnsweres>
+            <string>avoid looking at the time </string>
+            <string>check the time</string>
+          </questionAnsweres>
+          <goodAnswer>Nice! Worrying about whether you’re getting enough sleep only makes it harder to sleep.</goodAnswer>
+          <badAnswer>Worrying about whether you’re getting enough sleep only makes it harder to sleep. Try turning clock faces away from your bed and placing electronic devices out of reach. Rather than trying to “fall asleep” just aim to be restful.</badAnswer>
+          <shortDesc>Dont watch the clock at night</shortDesc>
+          <active>false</active>
+          <answeredCorrectly>false</answeredCorrectly>
+        </InventoryItem>
+      </sceneItems>
+    </IslandDataContainer>
+  </islandDataList>
+  <chosenAdviceList />
+</SaveFile>
