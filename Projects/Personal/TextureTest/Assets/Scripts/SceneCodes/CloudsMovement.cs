@@ -8,7 +8,6 @@ public class CloudsMovement : MonoBehaviour
 {
     [SerializeField] float verticalParalax;
     [SerializeField] float horizontalParalax;
-    [SerializeField] float threshhold;
     [SerializeField] GameObject cloudLeft;
     [SerializeField] GameObject cloudRight;
 
@@ -42,7 +41,6 @@ public class CloudsMovement : MonoBehaviour
             //move right
             if (transform.position.x < cam.transform.position.x)
             {
-                Debug.Log("moved right");
                 transform.position = new Vector2(transform.position.x + length, transform.position.y);
                 endPos = new Vector2(endPos.x + length, endPos.y);
             }
@@ -51,8 +49,6 @@ public class CloudsMovement : MonoBehaviour
             {
                 transform.position = new Vector2(transform.position.x - length, transform.position.y);
                 endPos = new Vector2(endPos.x - length, endPos.y);
-                Debug.Log("moved left");
-
             }
         }
     }
