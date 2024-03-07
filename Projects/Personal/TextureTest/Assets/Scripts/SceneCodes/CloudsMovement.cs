@@ -72,7 +72,6 @@ public class CloudsMovement : MonoBehaviour
         }
 
         length = right - left;
-        Debug.Log(length);
         return length;
     }
 
