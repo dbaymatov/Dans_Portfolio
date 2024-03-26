@@ -44,7 +44,6 @@ public class PlayerController : Controller
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("trying to jump");
             motor.Peek().Jump();
         }
         if (Input.GetKeyDown("x"))//collects user input and depending on the possion state either posses or unposses

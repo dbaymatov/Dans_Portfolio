@@ -5,11 +5,10 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
-public class BotMotorTest : Motor
+public class BirdMotor : Motor
 
 {
-    [SerializeField] float accelerationHorizontal;
-    [SerializeField] float accelerationVertical;
+    [SerializeField] float acceleration;
     [SerializeField] float maxSpeed;
     [SerializeField] float groundBoxXsize;
     [SerializeField] float groundBoxYsize;
@@ -22,20 +21,26 @@ public class BotMotorTest : Motor
     {
         rb = GetComponent<Rigidbody2D>();
     }
-    public override void MoveHorizontal (Vector2 move)
-    {
-        if (rb.velocity.magnitude < maxSpeed)
-        {
-            rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationHorizontal, 0));
-        }
-    }
     public override void MoveVertical(Vector2 move)
     {
         if (rb.velocity.magnitude < maxSpeed)
         {
-            rb.AddForce(new Vector2(0, move.y * Time.deltaTime * accelerationVertical));
-
+            rb.AddForce(new Vector2(move.x * Time.deltaTime * acceleration, 0));
         }
+    }
+    public override void MoveHorizontal(Vector2 move)
+    {
+        if (rb.velocity.magnitude < maxSpeed)
+        {
+            rb.AddForce(new Vector2(0, move.y * Time.deltaTime * acceleration));
+
+            
+        }
+        else if (IsGrounded()& rb.velocity.magnitude < maxSpeed/2)
+        {
+            rb.AddForce(new Vector2(0, move.y * Time.deltaTime * acceleration));
+        }
+        
     }
     public override void SpecialMove()
     {
@@ -43,15 +48,11 @@ public class BotMotorTest : Motor
     //checks if touches ground and adds force to rb if touches ground
     public override void Jump()
     {
-        Debug.Log("jump method");
-        if (IsGrounded(1f))
-        {
             Debug.Log("inside contitional");
             rb.AddForce(new Vector2(0, jumpForce));
-        }
     }
 
-    public bool IsGrounded(float distance)
+    public bool IsGrounded()
     {
         if (Physics2D.BoxCast(transform.position, new Vector2(groundBoxXsize, groundBoxYsize), 0, -transform.up, groundBoxYpos))
             return true;
