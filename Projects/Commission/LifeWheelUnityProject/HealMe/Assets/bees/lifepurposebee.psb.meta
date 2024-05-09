@@ -21,10 +21,13 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
+    ignoreMipmapLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -46,6 +49,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -79,7 +83,6 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -87,8 +90,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: antennaL
@@ -103,13 +106,16 @@ ScriptedImporter:
       width: 330
       height: 545
     spriteID: 036cb647ea8ded84d8c98cd9982a977c
-    internalID: 0
     spriteBone:
     - name: bone_2
+      guid: 
       position: {x: 391.76147, y: -433.64227, z: 0}
       rotation: {x: 0, y: 0, z: 0.8792805, w: 0.47630438}
       length: 727.87427
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 329.68396, y: 90.98596}
@@ -1050,8 +1056,8 @@ ScriptedImporter:
     - {x: 84, y: 69}
     - {x: 85, y: 39}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 229, y: -798}
+    uvTransform: {x: 877, y: 576}
+    spritePosition: {x: 648, y: 1374}
   - name: antennaR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1064,13 +1070,16 @@ ScriptedImporter:
       width: 399
       height: 564
     spriteID: 2ec7e3afd0ef42e44879d119b5c0a9ca
-    internalID: 0
     spriteBone:
     - name: bone_2
+      guid: 
       position: {x: 749.7615, y: -404.64227, z: 0}
       rotation: {x: 0, y: 0, z: 0.8792805, w: 0.47630438}
       length: 727.87427
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 378.77197, y: 545.11304}
@@ -2339,8 +2348,8 @@ ScriptedImporter:
     - {x: 114, y: 35}
     - {x: 115, y: 32}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 587, y: -1341}
+    uvTransform: {x: 877, y: 4}
+    spritePosition: {x: 290, y: 1345}
   - name: face
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2353,13 +2362,16 @@ ScriptedImporter:
       width: 280
       height: 196
     spriteID: 328bbd611382bdf42a463a23d6d31429
-    internalID: 0
     spriteBone:
     - name: bone_2
+      guid: 
       position: {x: 386.76147, y: -52.642334, z: 0}
       rotation: {x: 0, y: 0, z: 0.8792805, w: 0.47630438}
       length: 727.87427
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 262.82098, y: 147.46594}
@@ -2738,8 +2750,8 @@ ScriptedImporter:
     - {x: 31, y: 30}
     - {x: 20, y: 31}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -649, y: 758}
+    uvTransform: {x: 4, y: 1751}
+    spritePosition: {x: 653, y: 993}
   - name: head
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2752,13 +2764,16 @@ ScriptedImporter:
       width: 854
       height: 794
     spriteID: 61aa26e3d8572bc49b03a1980f1942be
-    internalID: 0
     spriteBone:
     - name: bone_2
+      guid: 
       position: {x: 619.7615, y: 114.357666, z: 0}
       rotation: {x: 0, y: 0, z: 0.8792805, w: 0.47630438}
       length: 727.87427
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 507.229, y: 0.49700928}
@@ -3269,8 +3284,8 @@ ScriptedImporter:
     - {x: 43, y: 42}
     - {x: 0, y: 43}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -416, y: 123}
+    uvTransform: {x: 4, y: 949}
+    spritePosition: {x: 420, y: 826}
   - name: body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3283,13 +3298,16 @@ ScriptedImporter:
       width: 865
       height: 937
     spriteID: b60d08a9979b04d48a77b9bb20d040ae
-    internalID: 0
     spriteBone:
     - name: bone_1
+      guid: 
       position: {x: 721.5397, y: 118.44394, z: 0}
       rotation: {x: 0, y: 0, z: 0.88417625, w: 0.46715343}
       length: 689.8915
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 395.228, y: 0.5}
@@ -3766,8 +3784,8 @@ ScriptedImporter:
     - {x: 39, y: 38}
     - {x: 0, y: 39}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -703, y: -248}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 707, y: 252}
   - name: wingL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3780,13 +3798,16 @@ ScriptedImporter:
       width: 416
       height: 381
     spriteID: cbd560ecb5a8526499be2052df064348
-    internalID: 0
     spriteBone:
     - name: bone_4
+      guid: 
       position: {x: 78.524536, y: 82.74518, z: 0}
       rotation: {x: 0, y: 0, z: 0.35868627, w: 0.9334582}
       length: 362.8629
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 143.23596, y: 0.46299744}
@@ -4292,8 +4313,8 @@ ScriptedImporter:
     - {x: 28, y: 27}
     - {x: 0, y: 28}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -13, y: -752}
+    uvTransform: {x: 1284, y: 4}
+    spritePosition: {x: 1297, y: 756}
   - name: wingR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4306,13 +4327,16 @@ ScriptedImporter:
       width: 199
       height: 310
     spriteID: a133d8468ac1bd34c92d12d78e2d81fc
-    internalID: 0
     spriteBone:
     - name: bone_5
+      guid: 
       position: {x: 114.36035, y: 139.98547, z: 0}
       rotation: {x: 0, y: 0, z: 0.76775163, w: 0.64074755}
       length: 148.18205
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 66.065, y: 0.875}
@@ -4807,8 +4831,8 @@ ScriptedImporter:
     - {x: 27, y: 26}
     - {x: 0, y: 27}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -393, y: 614}
+    uvTransform: {x: 877, y: 1569}
+    spritePosition: {x: 1270, y: 955}
   - name: stinger
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4821,13 +4845,16 @@ ScriptedImporter:
       width: 259
       height: 432
     spriteID: 0ac2b4fa1824fbb44a437773070c5cf1
-    internalID: 0
     spriteBone:
     - name: bone_1
+      guid: 
       position: {x: 99.53967, y: 256.44397, z: 0}
       rotation: {x: 0, y: 0, z: 0.88417625, w: 0.46715343}
       length: 689.8915
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 222.77502, y: 0.3449707}
@@ -5212,105 +5239,46 @@ ScriptedImporter:
     - {x: 27, y: 26}
     - {x: 0, y: 27}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -452, y: 1015}
-  platformSettings: []
-  mosaicLayers: 1
-  documentPivot: {x: 0, y: 0}
-  documentAlignment: 7
-  importHiddenLayers: 0
-  importedTextureWidth: 2048
-  importedTextureHeight: 2048
-  documentSize: {x: 2000, y: 2000}
-  paperDollMode: 0
-  keepDupilcateSpriteName: 0
-  spriteCategoryList:
-    categories: []
-  textureActualWidth: 2048
-  textureActualHeight: 2048
-  spritePackingTag: 
-  resliceFromLayer: 0
-  characterMode: 1
-  mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: antennaL
-    spriteName: antennaL
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 036cb647ea8ded84d8c98cd9982a977c
-    layerID: 40
-    mosaicPosition: {x: 877, y: 576}
-  - name: antennaR
-    spriteName: antennaR
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 2ec7e3afd0ef42e44879d119b5c0a9ca
-    layerID: 38
-    mosaicPosition: {x: 877, y: 4}
-  - name: face
-    spriteName: face
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 328bbd611382bdf42a463a23d6d31429
-    layerID: 33
-    mosaicPosition: {x: 4, y: 1751}
-  - name: head
-    spriteName: head
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 61aa26e3d8572bc49b03a1980f1942be
-    layerID: 27
-    mosaicPosition: {x: 4, y: 949}
-  - name: body
-    spriteName: body
-    isGroup: 0
-    parentIndex: -1
-    spriteID: b60d08a9979b04d48a77b9bb20d040ae
-    layerID: 21
-    mosaicPosition: {x: 4, y: 4}
-  - name: wingL
-    spriteName: wingL
-    isGroup: 0
-    parentIndex: -1
-    spriteID: cbd560ecb5a8526499be2052df064348
-    layerID: 15
-    mosaicPosition: {x: 1284, y: 4}
-  - name: wingR
-    spriteName: wingR
-    isGroup: 0
-    parentIndex: -1
-    spriteID: a133d8468ac1bd34c92d12d78e2d81fc
-    layerID: 9
-    mosaicPosition: {x: 877, y: 1569}
-  - name: stinger
-    spriteName: stinger
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 0ac2b4fa1824fbb44a437773070c5cf1
-    layerID: 3
-    mosaicPosition: {x: 877, y: 1129}
+    uvTransform: {x: 877, y: 1129}
+    spritePosition: {x: 1329, y: 114}
   characterData:
     bones:
     - name: bone_1
+      guid: 
       position: {x: 1428.5397, y: 370.44394, z: 0}
       rotation: {x: 0, y: 0, z: 0.88417625, w: 0.46715343}
       length: 689.8915
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_2
+      guid: 
       position: {x: 689.8914, y: -0.00004228013, z: 0}
       rotation: {x: 0, y: 0, z: -0.01037812, w: 0.9999462}
       length: 727.8744
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_4
+      guid: 
       position: {x: 416.73578, y: -220.10896, z: 0}
       rotation: {x: 0, y: 0, z: -0.65778005, w: 0.75321007}
       length: 362.86288
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_5
+      guid: 
       position: {x: 623.4345, y: -371.80862, z: 0}
       rotation: {x: 0, y: 0, z: -0.20787597, w: 0.9781552}
       length: 148.18205
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     parts:
     - spritePosition:
         x: 648
@@ -5386,8 +5354,125 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  padding: 4
+  spriteSizeExpand: 0
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: antennaL
+    spriteName: antennaL
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 036cb647ea8ded84d8c98cd9982a977c
+    layerID: 40
+    mosaicPosition: {x: 877, y: 576}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: antennaR
+    spriteName: antennaR
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2ec7e3afd0ef42e44879d119b5c0a9ca
+    layerID: 38
+    mosaicPosition: {x: 877, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: face
+    spriteName: face
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 328bbd611382bdf42a463a23d6d31429
+    layerID: 33
+    mosaicPosition: {x: 4, y: 1751}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: head
+    spriteName: head
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 61aa26e3d8572bc49b03a1980f1942be
+    layerID: 27
+    mosaicPosition: {x: 4, y: 949}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: body
+    spriteName: body
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b60d08a9979b04d48a77b9bb20d040ae
+    layerID: 21
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: wingL
+    spriteName: wingL
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cbd560ecb5a8526499be2052df064348
+    layerID: 15
+    mosaicPosition: {x: 1284, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: wingR
+    spriteName: wingR
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a133d8468ac1bd34c92d12d78e2d81fc
+    layerID: 9
+    mosaicPosition: {x: 877, y: 1569}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: stinger
+    spriteName: stinger
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0ac2b4fa1824fbb44a437773070c5cf1
+    layerID: 3
+    mosaicPosition: {x: 877, y: 1129}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: lifepurposebee Texture
   prefabAssetName: lifepurposebee Prefab
   spriteLibAssetName: lifepurposebee Sprite Lib
+  skeletonAssetName: 
   secondarySpriteTextures: []

@@ -25,9 +25,9 @@ public class MenuManager : MonoBehaviour
     {
         GameManagers.SetActive(true);
         currentStage = sc.v.Count;
-        Debug.Log(currentStage +  " current stage");
+        Debug.Log(currentStage +  " current stage from loaded data");
 
-        if (currentStage > 1 && currentStage != 8)//4 is level 1 game stage
+        if (currentStage >= 1 && currentStage != 8)//4 is level 1 game stage
         {
             if (currentStage < 7)
             {

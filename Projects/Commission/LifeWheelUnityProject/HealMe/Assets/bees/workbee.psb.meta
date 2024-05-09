@@ -21,10 +21,13 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
+    ignoreMipmapLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -46,6 +49,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -79,7 +83,6 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -87,8 +90,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: antennaL
@@ -103,13 +106,16 @@ ScriptedImporter:
       width: 208
       height: 330
     spriteID: d0e5f1d8641889a41bc9801495731b9f
-    internalID: 0
     spriteBone:
     - name: workbee_rig
+      guid: 
       position: {x: -298.50897, y: -606.1135, z: 0}
       rotation: {x: 0, y: 0, z: 0.63232577, w: 0.77470267}
       length: 760.8964
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 15.877014, y: 0.39697266}
@@ -1124,8 +1130,8 @@ ScriptedImporter:
     - {x: 92, y: 78}
     - {x: 93, y: 18}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -876, y: -703}
+    uvTransform: {x: 429, y: 909}
+    spritePosition: {x: 1305, y: 1612}
   - name: antennaR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1138,13 +1144,16 @@ ScriptedImporter:
       width: 240
       height: 429
     spriteID: cab393f4f10b86049883afcae85023f5
-    internalID: 0
     spriteBone:
     - name: workbee_rig
+      guid: 
       position: {x: -53.508972, y: -509.11353, z: 0}
       rotation: {x: 0, y: 0, z: 0.63232577, w: 0.77470267}
       length: 760.8964
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 24, y: 1}
@@ -2287,8 +2296,8 @@ ScriptedImporter:
     - {x: 103, y: 5}
     - {x: 104, y: 26}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -586, y: 25}
+    uvTransform: {x: 474, y: 1540}
+    spritePosition: {x: 1060, y: 1515}
   - name: face
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2301,13 +2310,16 @@ ScriptedImporter:
       width: 170
       height: 331
     spriteID: b3ea540e1c58bac4ba29ea24564e45ab
-    internalID: 0
     spriteBone:
     - name: workbee_rig
+      guid: 
       position: {x: -122.50897, y: 24.886475, z: 0}
       rotation: {x: 0, y: 0, z: 0.63232577, w: 0.77470267}
       length: 760.8964
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 26.783997, y: 285.93396}
@@ -2884,8 +2896,8 @@ ScriptedImporter:
     - {x: 49, y: 48}
     - {x: 32, y: 49}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -366, y: 195}
+    uvTransform: {x: 763, y: 1176}
+    spritePosition: {x: 1129, y: 981}
   - name: head
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2898,18 +2910,25 @@ ScriptedImporter:
       width: 810
       height: 806
     spriteID: 09fcdee6db841994992ea536b8fbb4af
-    internalID: 0
     spriteBone:
     - name: workbee_rig
+      guid: 
       position: {x: 304.49097, y: 14.886475, z: 0}
       rotation: {x: 0, y: 0, z: 0.63232577, w: 0.77470267}
       length: 760.8964
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: tail
+      guid: 
       position: {x: -974.2815, y: 199.46599, z: 0}
       rotation: {x: 0, y: 0, z: -0.10079881, w: 0.99490684}
       length: 994.4906
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 429.229, y: 0.49798584}
@@ -3399,8 +3418,8 @@ ScriptedImporter:
     - {x: 42, y: 41}
     - {x: 0, y: 42}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 61, y: -987}
+    uvTransform: {x: 763, y: 4}
+    spritePosition: {x: 702, y: 991}
   - name: body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3413,28 +3432,43 @@ ScriptedImporter:
       width: 751
       height: 897
     spriteID: 735094b68720b974daae8b4f3072cb3e
-    internalID: 0
     spriteBone:
     - name: tail
+      guid: 
       position: {x: -974.2814, y: 199.46605, z: 0}
       rotation: {x: 0, y: 0, z: -0.10079877, w: 0.99490684}
       length: 994.4906
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: l_wing
+      guid: 
       position: {x: -193.84532, y: -217.09781, z: 0}
       rotation: {x: 0, y: 0, z: -0.28406948, w: 0.9588038}
       length: 441.25153
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: workbee_rig
+      guid: 
       position: {x: 440.49103, y: 765.8865, z: 0}
       rotation: {x: 0, y: 0, z: 0.63232577, w: 0.77470267}
       length: 760.8964
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: r_wing
+      guid: 
       position: {x: -242.01971, y: 232.50694, z: 0}
       rotation: {x: 0, y: 0, z: 0.310746, w: 0.95049304}
       length: 542.4532
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 317.23, y: 0.49700928}
@@ -3836,8 +3870,8 @@ ScriptedImporter:
     - {x: 34, y: 33}
     - {x: 0, y: 34}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -562, y: -236}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 566, y: 240}
   - name: wingL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3850,13 +3884,16 @@ ScriptedImporter:
       width: 462
       height: 442
     spriteID: f326906e5b9702148950c718e9274db5
-    internalID: 0
     spriteBone:
     - name: l_wing
+      guid: 
       position: {x: 76.35535, y: 100.47974, z: 0}
       rotation: {x: 0, y: 0, z: 0.3862069, w: 0.92241216}
       length: 441.25156
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 135.02301, y: 0.48999023}
@@ -4283,8 +4320,8 @@ ScriptedImporter:
     - {x: 29, y: 28}
     - {x: 0, y: 29}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -1100, y: 868}
+    uvTransform: {x: 4, y: 1540}
+    spritePosition: {x: 1104, y: 672}
   - name: wingR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4297,13 +4334,16 @@ ScriptedImporter:
       width: 417
       height: 623
     spriteID: c1382039f3e50af4d90e029364b47c19
-    internalID: 0
     spriteBone:
     - name: r_wing
+      guid: 
       position: {x: 301.21387, y: 103.350464, z: 0}
       rotation: {x: 0, y: 0, z: 0.8417569, w: 0.53985673}
       length: 542.45337
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 238.77899, y: 1.6950073}
@@ -4710,8 +4750,8 @@ ScriptedImporter:
     - {x: 29, y: 28}
     - {x: 0, y: 29}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -425, y: 197}
+    uvTransform: {x: 4, y: 909}
+    spritePosition: {x: 429, y: 712}
   - name: stinger
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4724,13 +4764,16 @@ ScriptedImporter:
       width: 340
       height: 350
     spriteID: c457032234a6a0641aec862729b5283a
-    internalID: 0
     spriteBone:
     - name: tail
+      guid: 
       position: {x: 48.892273, y: 28.313354, z: 0}
       rotation: {x: 0, y: 0, z: 0.5510161, w: 0.8344946}
       length: 994.4908
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 59.36499, y: 0.41497803}
@@ -5075,105 +5118,46 @@ ScriptedImporter:
     - {x: 27, y: 26}
     - {x: 0, y: 27}
     tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 196, y: 755}
-  platformSettings: []
-  mosaicLayers: 1
-  documentPivot: {x: 0, y: 0}
-  documentAlignment: 7
-  importHiddenLayers: 0
-  importedTextureWidth: 2048
-  importedTextureHeight: 2048
-  documentSize: {x: 2000, y: 2000}
-  paperDollMode: 0
-  keepDupilcateSpriteName: 0
-  spriteCategoryList:
-    categories: []
-  textureActualWidth: 2048
-  textureActualHeight: 2048
-  spritePackingTag: 
-  resliceFromLayer: 0
-  characterMode: 1
-  mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: antennaL
-    spriteName: antennaL
-    isGroup: 0
-    parentIndex: -1
-    spriteID: d0e5f1d8641889a41bc9801495731b9f
-    layerID: 38
-    mosaicPosition: {x: 429, y: 909}
-  - name: antennaR
-    spriteName: antennaR
-    isGroup: 0
-    parentIndex: -1
-    spriteID: cab393f4f10b86049883afcae85023f5
-    layerID: 37
-    mosaicPosition: {x: 474, y: 1540}
-  - name: face
-    spriteName: face
-    isGroup: 0
-    parentIndex: -1
-    spriteID: b3ea540e1c58bac4ba29ea24564e45ab
-    layerID: 32
-    mosaicPosition: {x: 763, y: 1176}
-  - name: head
-    spriteName: head
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 09fcdee6db841994992ea536b8fbb4af
-    layerID: 24
-    mosaicPosition: {x: 763, y: 4}
-  - name: body
-    spriteName: body
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 735094b68720b974daae8b4f3072cb3e
-    layerID: 18
-    mosaicPosition: {x: 4, y: 4}
-  - name: wingL
-    spriteName: wingL
-    isGroup: 0
-    parentIndex: -1
-    spriteID: f326906e5b9702148950c718e9274db5
-    layerID: 12
-    mosaicPosition: {x: 4, y: 1540}
-  - name: wingR
-    spriteName: wingR
-    isGroup: 0
-    parentIndex: -1
-    spriteID: c1382039f3e50af4d90e029364b47c19
-    layerID: 11
-    mosaicPosition: {x: 4, y: 909}
-  - name: stinger
-    spriteName: stinger
-    isGroup: 0
-    parentIndex: -1
-    spriteID: c457032234a6a0641aec862729b5283a
-    layerID: 5
-    mosaicPosition: {x: 763, y: 818}
+    uvTransform: {x: 763, y: 818}
+    spritePosition: {x: 567, y: 63}
   characterData:
     bones:
     - name: tail
+      guid: 
       position: {x: -974.2815, y: 199.46608, z: 0}
       rotation: {x: 0, y: 0, z: -0.10079884, w: 0.9949069}
       length: 994.4906
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: workbee_rig
+      guid: 
       position: {x: 1006.491, y: 1005.8865, z: 0}
       rotation: {x: 0, y: 0, z: 0.63232577, w: 0.77470267}
       length: 760.8965
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: r_wing
+      guid: 
       position: {x: -242.01971, y: 232.50691, z: 0}
       rotation: {x: 0, y: 0, z: 0.31074598, w: 0.95049304}
       length: 542.45325
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: l_wing
+      guid: 
       position: {x: -193.84532, y: -217.09784, z: 0}
       rotation: {x: 0, y: 0, z: -0.28406948, w: 0.9588038}
       length: 441.2515
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     parts:
     - spritePosition:
         x: 1305
@@ -5249,8 +5233,125 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  padding: 4
+  spriteSizeExpand: 0
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: antennaL
+    spriteName: antennaL
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d0e5f1d8641889a41bc9801495731b9f
+    layerID: 38
+    mosaicPosition: {x: 429, y: 909}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: antennaR
+    spriteName: antennaR
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cab393f4f10b86049883afcae85023f5
+    layerID: 37
+    mosaicPosition: {x: 474, y: 1540}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: face
+    spriteName: face
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b3ea540e1c58bac4ba29ea24564e45ab
+    layerID: 32
+    mosaicPosition: {x: 763, y: 1176}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: head
+    spriteName: head
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09fcdee6db841994992ea536b8fbb4af
+    layerID: 24
+    mosaicPosition: {x: 763, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: body
+    spriteName: body
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 735094b68720b974daae8b4f3072cb3e
+    layerID: 18
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: wingL
+    spriteName: wingL
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f326906e5b9702148950c718e9274db5
+    layerID: 12
+    mosaicPosition: {x: 4, y: 1540}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: wingR
+    spriteName: wingR
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c1382039f3e50af4d90e029364b47c19
+    layerID: 11
+    mosaicPosition: {x: 4, y: 909}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: stinger
+    spriteName: stinger
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c457032234a6a0641aec862729b5283a
+    layerID: 5
+    mosaicPosition: {x: 763, y: 818}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: workbee Texture
   prefabAssetName: workbee Prefab
   spriteLibAssetName: workbee Sprite Lib
+  skeletonAssetName: 
   secondarySpriteTextures: []
