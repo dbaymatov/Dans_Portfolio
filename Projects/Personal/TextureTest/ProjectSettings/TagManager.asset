@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Blur
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Blur
   - 
   - 
   - 
@@ -41,15 +42,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: FarBackground
+    uniqueID: 3154683721
+    locked: 0
   - name: Background
     uniqueID: 681852511
     locked: 0
   - name: Farground
     uniqueID: 784578551
     locked: 0
-  - name: Midground
+  - name: MidBackground
     uniqueID: 1760240929
     locked: 0
-  - name: Foreground
+  - name: ActionLighting
     uniqueID: 1911294907
+    locked: 0
+  - name: ColliderHighlight
+    uniqueID: 2594125943
+    locked: 0
+  - name: MidForeground
+    uniqueID: 4043057877
+    locked: 0
+  - name: Foreground
+    uniqueID: 2115138683
     locked: 0

@@ -23,30 +23,35 @@ public class CloudsMovement : MonoBehaviour
         InitializeClouds();
         startPos = cam.transform.position;
         endPos = cam.transform.position;
+        Debug.Log("Length:"+ length);
 
     }
 
     void FixedUpdate()
     {
-        Vector2 camPosDifference = endPos - startPos;
-
         endPos = startPos;
         startPos = cam.transform.position;
+        Vector2 camPosDifference = endPos - startPos;
+
         //parallax and movement math
         transform.position = new Vector2(transform.position.x - camPosDifference.x * horizontalParalax + moveOverTime.x * Time.deltaTime,
                                          transform.position.y - camPosDifference.y * verticalParalax + moveOverTime.y * Time.deltaTime);
         //if cam get to far away from repeating obj
         if (math.abs(cam.transform.position.x - transform.position.x) > length)
         {
+            Debug.Log("Geting to far");
+
             //move right
             if (transform.position.x < cam.transform.position.x)
             {
+                Debug.Log("going right");
                 transform.position = new Vector2(transform.position.x + length, transform.position.y);
                 endPos = new Vector2(endPos.x + length, endPos.y);
             }
             //move left
             else if (transform.position.x > cam.transform.position.x)
             {
+                Debug.Log("going left");
                 transform.position = new Vector2(transform.position.x - length, transform.position.y);
                 endPos = new Vector2(endPos.x - length, endPos.y);
             }

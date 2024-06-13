@@ -76,11 +76,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1911294907
+  m_SortingLayerID: 1760240929
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -120,11 +120,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd1c732aee583f409c97b834635b496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 10000
+  accelerationHorizontal: 100000
+  accelerationVertical: 100000
   maxSpeed: 1000
-  groundBoxXsize: 0
-  groundBoxYsize: 0
-  groundBoxYpos: 0
+  groundBoxXsize: 4.23
+  groundBoxYsize: 0.7
+  groundBoxYpos: 1.81
+  jumpForce: 300
 --- !u!114 &8098149338267577448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +164,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
+  m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

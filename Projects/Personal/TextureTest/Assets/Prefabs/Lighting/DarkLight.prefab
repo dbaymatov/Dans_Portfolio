@@ -27,7 +27,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.65, y: -13.98, z: 0}
-  m_LocalScale: {x: 1, y: 0.24447681, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -47,12 +47,12 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 1
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
+  m_FalloffIntensity: 0.07
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_Intensity: 3.69
+  m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: bb0bec71
+  m_ApplyToSortingLayers: bb0bec712125eb68
   m_LightCookieSprite: {fileID: 21300000, guid: ddccfe72e67fe479a9aac61a55a7dadc, type: 3}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -66,8 +66,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.40969992, y: -3.99995, z: 0}
-    m_Extent: {x: 4.8363, y: 6.18195, z: 0}
+    m_Center: {x: -1.0508499, y: -0.57700014, z: 0}
+    m_Extent: {x: 8.17315, y: 7.2423, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.26
@@ -75,10 +75,10 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 2.64
+  m_ShapeLightFalloffSize: 5.03
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -1.785985, y: -7.545007, z: 0}
-  - {x: 2.6029887, y: -6.9633164, z: 0}
-  - {x: 2.529337, y: -1.0977684, z: 0}
-  - {x: -1.539154, y: -0.4633764, z: 0}
+  - {x: -3.46945, y: -2.788824, z: 0}
+  - {x: 2.0541248, y: -2.4657712, z: 0}
+  - {x: 2.093502, y: 1.6345105, z: 0}
+  - {x: -4.194727, y: 1.618361, z: 0}
