@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class PlayerController : Controller
 {
-    List<GameObject> targetList = new List<GameObject>();
-    GameObject target;
+    List<GameObject> targetList = new List<GameObject>();//list of mobs in posses range
+    GameObject target; //closest mob in the list to posses
+    LayerMask initialLayer;
     bool possesing;
     void Start()
     {
@@ -16,14 +17,14 @@ public class PlayerController : Controller
     }
 
     //collects inputs from player and executes them
-    public override void TakeAction()
+    public override void ExecuteMovement()//this method goes into fixed update in deff class that will execute it
     {
         Vector2 move = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime, //x
                                    Input.GetAxis("Vertical") * Time.deltaTime); //y
         motor.Peek().ExecuteMove(move);
         abilities.Peek().ExecuteAbility();
     }
-    public override void ExecuteControlls()
+    public override void ExecuteControlls()//this method goes into update in deff class that will execute it
     {
         if (Input.GetKeyDown("1"))
         {
@@ -32,28 +33,28 @@ public class PlayerController : Controller
 
         if (Input.GetKeyDown("2"))
         {
-
+            abilities.Peek().Ability2();
         }
         if (Input.GetKeyDown("3"))
         {
-
+            abilities.Peek().Ability3();
         }
         if (Input.GetKeyDown("4"))
         {
-
+            abilities.Peek().Ability4();
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             motor.Peek().Jump();
         }
-        if (Input.GetKeyDown("x"))//collects user input and depending on the possion state either posses or unposses
+        if (Input.GetKeyDown("x"))//collects user input and depending on the possesion state either posses or unposses
         {
             if (!possesing & targetList.Count > 0)
             {
-                target = GetClosest();
-                Possess(target);
+                target = GetClosest();//gets closest mob in possesion range
+                Possess(target);//and posses it
             }
-            else
+            else//if allready possesing will unposses instead
             {
                 Unposses();
             }
@@ -64,22 +65,22 @@ public class PlayerController : Controller
         }
     }
 
-    public override void AddMotor(Motor motor)//posses movement of mob
+    public void AddMotor(Motor motor)//posses movement of mob
     {
         this.motor.Push(motor);
     }
-    public override void RemoveMotor()//give up movement of mob
+    public void RemoveMotor()//give up movement of mob
     {
         if (this.motor.Count > 1)
         {
             this.motor.Pop();
         }
     }
-    public override void AddAbility(Abilities ability)//posses movement of mob
+    public void AddAbility(Abilities ability)//posses movement of mob
     {
         this.abilities.Push(ability);
     }
-    public override void RemoveAbility()//give up movement of mob
+    public void RemoveAbility()//give up abilities of mob
     {
         if (this.abilities.Count > 1)
         {
@@ -106,15 +107,18 @@ public class PlayerController : Controller
             AddAbility(bot.GetComponent<Abilities>());
             //sets same position and parants to bot
             transform.position = bot.transform.position;
-            BotDeff def = bot.GetComponent<BotDeff>();
+            BotDeff def = bot.GetComponent<BotDeff>();//changes layer to fiendly so to not get attacked by friendly mobs and itself
             def.possesd = true;
             possesing = true;
+            initialLayer = bot.layer;
+            bot.layer = LayerMask.NameToLayer("Friendly");
     }
     private void Unposses()//clears bots motor and abilites from the player control something othervise does nothing
     {
         if (possesing)
         {
             target.GetComponent<BotDeff>().possesd = false;
+            target.layer = initialLayer;//changes layer back to bot
             RemoveMotor();
             RemoveAbility();
             possesing = false;

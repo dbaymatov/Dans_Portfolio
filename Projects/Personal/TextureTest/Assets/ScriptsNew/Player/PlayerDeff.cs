@@ -18,7 +18,7 @@ public class PlayerDeff : BotDeff
     // Update is called once per frame
     private void FixedUpdate()
     {
-        controller.Peek().TakeAction();//controlls movement
+        controller.Peek().ExecuteMovement();//controlls movement
 
     }
     private void Update()
@@ -26,6 +26,4 @@ public class PlayerDeff : BotDeff
         controller.Peek().ExecuteControlls();//controlls of the abilities
 
     }
-
-    public override void Posses(Controller controller) { }
 }

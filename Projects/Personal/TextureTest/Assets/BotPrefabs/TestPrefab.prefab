@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 709908599133843571}
   - component: {fileID: 4340028889456931856}
   - component: {fileID: 1607957786756315655}
+  - component: {fileID: 5505869157549024415}
   - component: {fileID: 2176678107472349462}
-  - component: {fileID: 8098149338267577448}
   - component: {fileID: 6406587511179879101}
   - component: {fileID: 7799909643365131798}
   - component: {fileID: 3076273020139933858}
@@ -108,6 +108,23 @@ MonoBehaviour:
   energyRegen: 1
   durability: 200
   abilities: {fileID: 0}
+--- !u!114 &5505869157549024415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2846601958126127128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8ce029b3545f349aad53e3eb05cf61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 0
+  attackPoint: {fileID: 0}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &2176678107472349462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,18 +144,6 @@ MonoBehaviour:
   groundBoxYsize: 0.7
   groundBoxYpos: 1.81
   jumpForce: 300
---- !u!114 &8098149338267577448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2846601958126127128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e8ce029b3545f349aad53e3eb05cf61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6406587511179879101
 MonoBehaviour:
   m_ObjectHideFlags: 0

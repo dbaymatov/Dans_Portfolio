@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4448795497345666683}
   - component: {fileID: 1417279020645185184}
   - component: {fileID: 5340905053312253303}
-  - component: {fileID: 818564085078881807}
   - component: {fileID: 8215457467949467768}
+  - component: {fileID: 1000481460893396899}
   - component: {fileID: 5133931824516514221}
   - component: {fileID: 5066941491203658314}
   m_Layer: 3
@@ -31,9 +31,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2238785146699722277}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.93, y: -15.21, z: 0}
-  m_LocalScale: {x: 1.8428016, y: -1.6716017, z: 0.2725977}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.79, y: -8.35, z: 0}
+  m_LocalScale: {x: 4.243606, y: -3.8493664, z: 0.62773836}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,11 +76,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1760240929
-  m_SortingLayer: 4
+  m_SortingLayerID: 1911294907
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+  m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -123,22 +123,10 @@ MonoBehaviour:
   accelerationHorizontal: 100000
   accelerationVertical: 100000
   maxSpeed: 1000
-  groundBoxXsize: 1.91
-  groundBoxYsize: 0.71
-  groundBoxYpos: 0.69
-  jumpForce: 700
---- !u!114 &818564085078881807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2238785146699722277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e8ce029b3545f349aad53e3eb05cf61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  groundBoxXsize: 4.23
+  groundBoxYsize: 0.7
+  groundBoxYpos: 1.81
+  jumpForce: 300
 --- !u!114 &8215457467949467768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +137,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57fae326f9617ba42bbfaaf2d94697db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1000481460893396899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2238785146699722277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2b48157272b72869d9facbe1f3200f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!50 &5133931824516514221
@@ -166,7 +166,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

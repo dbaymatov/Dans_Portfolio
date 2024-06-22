@@ -18,19 +18,24 @@ public abstract class BotDeff : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-
-    public void CheckCondition()
-    {
-        if (hp < 0)
-        {
-            Die();
-        }
-        if (durability < 0)
-        {
-            Destroy();
-        }
+    public void TakeDamage(float damage){
+        hp = hp - damage;
+        Debug.Log("I recived Damage " + gameObject.name);
     }
 
-    public abstract void Posses(Controller playerController);
+
+    // public void CheckCondition()
+    // {
+    //     if (hp < 0)
+    //     {
+    //         Die();
+    //     }
+    //     if (durability < 0)
+    //     {
+    //         Destroy();
+    //     }
+    // }
+
+    // public abstract void Posses(Controller playerController);
 
 }

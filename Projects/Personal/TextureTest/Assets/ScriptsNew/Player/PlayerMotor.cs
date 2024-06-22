@@ -21,7 +21,6 @@ public class PlayerMotor : Motor
         if (rb.velocity.magnitude < maxSpeed)
         {
             rb.AddForce(new Vector2(0, move.y * Time.deltaTime * acceleration));
-
         }
     }
     public override void SpecialMove()

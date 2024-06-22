@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class BotAbilitesTest : Abilities
 {
+    [SerializeField] float attackRange;
+    [SerializeField] Transform attackPoint;
+    [SerializeField] float damage;
+    public LayerMask enemyLayers;
     public override void Attack()
     {
     }
@@ -28,10 +32,19 @@ public class BotAbilitesTest : Abilities
     {
     }
 
-    public override void Ability1()
+    public override void Ability1()//will use as attack method for swordsman
     {
         Debug.Log("ability bot 1 active");
+        //animator.SetTrigger("Slash");        
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position,attackRange,enemyLayers);
+        foreach (Collider2D enemy in hitEnemies){
+            Debug.Log("hit" + enemy.name);
+            BotDeff botDeff = enemy.GetComponent<BotDeff>();
+            botDeff.TakeDamage(damage);
+        }
     }
+
+    
 
     public override void Ability2()
     {
@@ -43,17 +56,7 @@ public class BotAbilitesTest : Abilities
 
     public override void Ability4()
     {
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    }private void OnDrawGizmos(){
+        Gizmos.DrawWireSphere(attackPoint.position,attackRange);
     }
 }
