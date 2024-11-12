@@ -28,7 +28,7 @@ public class RatMotor : Motor
         rb = GetComponent<Rigidbody2D>();
     }
 
-    //makes bird flap its wing causing it to move up
+    //rat should not be able to move vertically, placeholder method
     public override void MoveVertical(Vector2 move)
     {
         if (rb.velocity.magnitude < maxSpeed)
@@ -37,7 +37,7 @@ public class RatMotor : Motor
         }
     }
 
-    //makes bird fly and walk on ground, holding W,S will make glide or dive
+    //makes rat walk on ground, 
     public override void MoveHorizontal(Vector2 move)
     {
 
@@ -65,7 +65,6 @@ public class RatMotor : Motor
         if(IsGrounded())
             rb.AddForce(new Vector2(0, jumpForce));
     }
-
     //checks if there is collision mesh bellow
     public bool IsGrounded()
     {

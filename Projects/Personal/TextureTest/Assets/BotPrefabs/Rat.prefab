@@ -187,10 +187,10 @@ MonoBehaviour:
   groundBoxYsize: 1.11
   groundBoxYpos: 1.03
   jumpForce: 450
-  deadjumpForce: 0
-  deadAccelerationH: 0
-  deadAccelerationV: 0
-  deadMaxSpeed: 0
+  deadjumpForce: 450
+  deadAccelerationH: 40000
+  deadAccelerationV: 15000
+  deadMaxSpeed: 15
 --- !u!1 &3654541479031393744
 GameObject:
   m_ObjectHideFlags: 0

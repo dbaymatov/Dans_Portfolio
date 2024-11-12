@@ -10747,6 +10747,14 @@ PrefabInstance:
       propertyPath: accelerationV
       value: 17000
       objectReference: {fileID: 0}
+    - target: {fileID: 5295808853052016861, guid: edc47b738ebd6019eaaf1c1ecf21552e, type: 3}
+      propertyPath: deadAccelerationH
+      value: 40000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5295808853052016861, guid: edc47b738ebd6019eaaf1c1ecf21552e, type: 3}
+      propertyPath: deadAccelerationV
+      value: 14000
+      objectReference: {fileID: 0}
     - target: {fileID: 7004201951268680857, guid: edc47b738ebd6019eaaf1c1ecf21552e, type: 3}
       propertyPath: m_AngularDrag
       value: 0
@@ -40232,6 +40240,22 @@ PrefabInstance:
     - target: {fileID: 2846601958126127128, guid: 7c32de7986e319441aa3333dba446797, type: 3}
       propertyPath: m_Name
       value: Swordsman
+      objectReference: {fileID: 0}
+    - target: {fileID: 3899222713783717837, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+      propertyPath: deadMaxSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3899222713783717837, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+      propertyPath: deadjumpForce
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 3899222713783717837, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+      propertyPath: deadAccelerationH
+      value: 150000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7629653219319815133, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

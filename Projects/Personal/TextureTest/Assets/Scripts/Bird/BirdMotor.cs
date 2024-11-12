@@ -18,8 +18,8 @@ public class BirdMotor : Motor
     [SerializeField] float jumpForce;
 
     [SerializeField] float deadjumpForce;
-    [SerializeField] float deadAccelerationH;
     [SerializeField] float deadAccelerationV;
+    [SerializeField] float deadAccelerationH;
     [SerializeField] float deadMaxSpeed;
 
     Rigidbody2D rb;

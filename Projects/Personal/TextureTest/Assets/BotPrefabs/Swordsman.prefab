@@ -290,10 +290,10 @@ MonoBehaviour:
   groundBoxYsize: 3.35
   groundBoxYpos: 1.66
   jumpForce: 700
-  deadjumpForce: 0
+  deadjumpForce: 700
   deadAccelerationV: 0
-  deadAccelerationH: 0
-  deadMaxSpeed: 0
+  deadAccelerationH: 150000
+  deadMaxSpeed: 10
 --- !u!70 &7629653219319815133
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

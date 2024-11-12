@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<SaveContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <gameStage>1</gameStage>
-  <character>1</character>
-  <saveList1 />
-  <saveList2 />
-  <saveList3 />
-</SaveContainer>
