@@ -10,6 +10,8 @@ public class CloudsMovement : MonoBehaviour
     [SerializeField] float horizontalParalax;
     [SerializeField] GameObject cloudLeft;
     [SerializeField] GameObject cloudRight;
+    [SerializeField] GameObject cloudLeftFar;
+    [SerializeField] GameObject cloudRightFar;
 
     private float length = 0;
     private Vector2 startPos;
@@ -79,8 +81,12 @@ public class CloudsMovement : MonoBehaviour
 
         cloudLeft.transform.position = new Vector2(transform.position.x-length, cloudLeft.transform.position.y);
         cloudRight.transform.position = new Vector2(transform.position.x+length, cloudLeft.transform.position.y);
+        cloudLeftFar.transform.position = new Vector2(transform.position.x-2*length, cloudLeft.transform.position.y);
+        cloudRightFar.transform.position = new Vector2(transform.position.x+2*length, cloudLeft.transform.position.y);
         cloudRight.transform.parent = transform;
         cloudLeft.transform.parent = transform;
+        cloudRightFar.transform.parent = transform;
+        cloudLeftFar.transform.parent = transform;
 
     }
 }

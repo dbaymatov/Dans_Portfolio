@@ -49,7 +49,6 @@ public class RatMotor : Motor
         {
             rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationH, 0));
         }
-
         if (move.x != 0)
         {
             ChangeDirection(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
@@ -78,10 +77,8 @@ public class RatMotor : Motor
         jumpForce = deadjumpForce;
         accelerationV = deadAccelerationV;
         accelerationH = deadAccelerationH;
-
         maxSpeed = deadMaxSpeed;
     }
-
     //displayes grounded detection box 
     private void OnDrawGizmos()
     {
