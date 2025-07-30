@@ -18,13 +18,17 @@ public class PlayerBotControll : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lookingRight = true;
-
+        lookingRight = transform.localScale.x>0 ? true: false;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        lookingRight = transform.localScale.x>0 ? true: false;
+        
+        rb.AddForce(
+                new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * speed, //x
+                            Input.GetAxis("Vertical") * Time.deltaTime * 0)); //y
 
         if (rb.velocity.magnitude < 3)
         {
@@ -32,37 +36,26 @@ public class PlayerBotControll : MonoBehaviour
 
             if (Input.GetAxis("Horizontal") != 0)
             {
-                if (Input.GetAxis("Horizontal") < 0)
+                if (Input.GetAxis("Horizontal") < 0 && !lookingRight)
                 {
-                    lookingRight = false;
-                    animator.Play("ratRun");
+                    currentScale.x *= -1;
                 }
 
-                if (Input.GetAxis("Horizontal") > 0)
+                if (Input.GetAxis("Horizontal") > 0 && lookingRight)
                 {
-
-                    lookingRight = true;
-                    animator.Play("ratRun");
-
+                    currentScale.x *= -1;
                 }
+                animator.Play("ratRun");
             }
 
-            if (Input.GetAxis("Horizontal") == 0)
+            else
             {
                 animator.Play("ratIdle");
-
             }
 
+        transform.localScale = currentScale;
 
-           
-
-
-
-            transform.localScale = currentScale;
-
-            rb.AddForce(
-                new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * speed, //x
-                            Input.GetAxis("Vertical") * Time.deltaTime * 0)); //y
+            
         }
 
         /*
