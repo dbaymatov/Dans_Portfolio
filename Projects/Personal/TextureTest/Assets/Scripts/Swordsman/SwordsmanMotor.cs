@@ -15,13 +15,11 @@ public class SwordsmanMotor : Motor
     [SerializeField] float groundBoxYsize;
     [SerializeField] float groundBoxYpos;
     [SerializeField] float jumpForce;
-
     [SerializeField] float deadjumpForce;
     [SerializeField] float deadAccelerationV;
     [SerializeField] float deadAccelerationH;
-
     [SerializeField] float deadMaxSpeed;
-
+    [SerializeField] GameObject attackPoint;
     Rigidbody2D rb;
     private void Start()
     {
@@ -32,25 +30,22 @@ public class SwordsmanMotor : Motor
 
         if(rb.velocity.x<maxSpeed && move.x>0){
 
-                rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationHorizontal, 0));
-
+            rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationHorizontal, 0));
+            if (!lookingRight)
+                FlipAttackPoint(attackPoint.transform);
         }
-        if(rb.velocity.x>-maxSpeed && move.x<0){
-                rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationHorizontal, 0));
+        if (rb.velocity.x > -maxSpeed && move.x < 0)
+        {
+            rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationHorizontal, 0));
+            if (lookingRight)
+                FlipAttackPoint(attackPoint.transform);
         }
-        if (move.x != 0)
-            {
-                ChangeDirection(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
-            }
-
     }
     public override void MoveVertical(Vector2 move)
     {
         if (rb.velocity.magnitude < maxSpeed)
         {
-
             rb.AddForce(new Vector2(0, move.y * Time.deltaTime * accelerationVertical));
-
         }
     }
     public override void SpecialMove()
@@ -59,12 +54,12 @@ public class SwordsmanMotor : Motor
     //checks if touches ground and adds force to rb if touches ground
     public override void Jump()
     {
-        if (IsGrounded(1f))
+        if (IsGrounded())
         {
+            rb.velocity = new Vector2(rb.velocity.x, 0); //cancells vertical speed
             rb.AddForce(new Vector2(0, jumpForce));
         }
     }
-
     public override void BecomeUndead()//replaces defult alive values with undead values
     {
         jumpForce = deadjumpForce;
@@ -73,7 +68,7 @@ public class SwordsmanMotor : Motor
 
         maxSpeed = deadMaxSpeed;
     }
-    public bool IsGrounded(float distance)//checks if the player is colliding with groind
+    public bool IsGrounded()//checks if the player is colliding with groind
     {
         if (Physics2D.BoxCast(transform.position, new Vector2(groundBoxXsize, groundBoxYsize), 0, -transform.up, groundBoxYpos))
             return true;

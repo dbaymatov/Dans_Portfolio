@@ -10,18 +10,15 @@ public class RatMotor : Motor
 {
     [SerializeField] float accelerationV;
     [SerializeField] float accelerationH;
-
     [SerializeField] float maxSpeed;
     [SerializeField] float groundBoxXsize;
     [SerializeField] float groundBoxYsize;
     [SerializeField] float groundBoxYpos;
     [SerializeField] float jumpForce;
-
     [SerializeField] float deadjumpForce;
     [SerializeField] float deadAccelerationH;
     [SerializeField] float deadAccelerationV;
     [SerializeField] float deadMaxSpeed;
-
     Rigidbody2D rb;
     private void Start()
     {
@@ -51,7 +48,7 @@ public class RatMotor : Motor
         }
         if (move.x != 0)
         {
-            ChangeDirection(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
+            //ChangeDirection(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
         }
 
     }
@@ -61,9 +58,14 @@ public class RatMotor : Motor
     //adds force up 
     public override void Jump()
     {
-        if(IsGrounded())
+        if (IsGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0); //cancells vertical speed
             rb.AddForce(new Vector2(0, jumpForce));
+        }
     }
+
+    
     //checks if there is collision mesh bellow
     public bool IsGrounded()
     {

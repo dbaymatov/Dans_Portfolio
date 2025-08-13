@@ -51,7 +51,7 @@ public class BotMotorTest : Motor
         }
         if (move.x != 0)
             {
-                ChangeDirection(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
+                //ChangeDirection(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
             }
 
     }

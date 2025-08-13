@@ -30,7 +30,7 @@ public class PlayerController : Controller
         abilities.Peek().ExecuteAbility();
         if (move.x != 0)
         {
-            motor.Peek().ChangeDirection(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
+            //motor.Peek().ChangeDirection(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
         }
     }
     public override void ExecuteControlls()//this method goes into update in deff class that will execute it

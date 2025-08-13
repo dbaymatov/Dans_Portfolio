@@ -26735,6 +26735,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1122603156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7454147500082155969, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+  m_PrefabInstance: {fileID: 2102395165}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1123181315
 GameObject:
   m_ObjectHideFlags: 0
@@ -47374,6 +47379,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3.63
       objectReference: {fileID: 0}
+    - target: {fileID: 547912110194606614, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.77
+      objectReference: {fileID: 0}
     - target: {fileID: 709908599133843571, guid: 7c32de7986e319441aa3333dba446797, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.36
@@ -47418,6 +47427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Swordsman
       objectReference: {fileID: 0}
+    - target: {fileID: 3899222713783717837, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 1122603156}
     - target: {fileID: 3899222713783717837, guid: 7c32de7986e319441aa3333dba446797, type: 3}
       propertyPath: groundBoxYpos
       value: 2.33
