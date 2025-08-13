@@ -86,6 +86,9 @@ public class RatMotor : Motor
     {
         Gizmos.DrawWireCube(transform.position - transform.up * groundBoxYpos, new Vector2(groundBoxXsize, groundBoxYsize));
     }
+    public override void Animate()
+    {
+    }
     //method used in the update function in bot deff inherited script
     public override void ExecuteMove(Vector2 move)
     {

@@ -43,4 +43,7 @@ public class PlayerMotor : Motor
     public override void BecomeUndead()
     {
     }
+    public override void Animate()
+    {
+    }
 }

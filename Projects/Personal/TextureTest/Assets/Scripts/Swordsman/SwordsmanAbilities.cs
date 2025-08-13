@@ -54,7 +54,7 @@ public class SwordsmanAbilities : Abilities
 
     public override void Ability4()
     {
-    //draws Ability1 attacl radious
+    //draws Ability1 attack radious
     }private void OnDrawGizmos(){
         Gizmos.DrawWireSphere(attackPoint.position,attackRange);
     }

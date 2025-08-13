@@ -84,6 +84,9 @@ public class BotMotorTest : Motor
 
         maxSpeed = deadMaxSpeed;
     }
+    public override void Animate()
+    {
+    }
     public bool IsGrounded(float distance)//checks if the player is colliding with groind
     {
         if (Physics2D.BoxCast(transform.position, new Vector2(groundBoxXsize, groundBoxYsize), 0, -transform.up, groundBoxYpos))

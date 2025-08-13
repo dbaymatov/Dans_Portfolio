@@ -9,6 +9,7 @@ public abstract class BotDeff : MonoBehaviour
     public float durability;
     public Stack<Controller> controller = new Stack<Controller>();
     public Abilities abilities;
+    public Motor motor;
     [SerializeField] GameObject aliveSprite;
     [SerializeField] GameObject deadSprite;
     [SerializeField] float aliveDurability;

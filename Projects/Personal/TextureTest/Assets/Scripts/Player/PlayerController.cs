@@ -13,14 +13,7 @@ public class PlayerController : Controller
     List<GameObject> targetList = new List<GameObject>();//list of mobs in posses range
     GameObject target; //closest mob in the list to posses
     LayerMask initialLayer;//temp variable used to set the bot back to original layer once done possesing
-    bool possesing;
-    void Start()
-    {
-        possesing = false;
-        motor.Push(GetComponent<Motor>());
-        abilities.Push(GetComponent<Abilities>());
-    }
-
+    bool possesing=false;
     //collects inputs from player and executes them
     public override void ExecuteMovement()//this method goes into fixed update in deff class that will execute it
     {
@@ -28,10 +21,6 @@ public class PlayerController : Controller
                                    Input.GetAxis("Vertical") * Time.deltaTime); //y
         motor.Peek().ExecuteMove(move);
         abilities.Peek().ExecuteAbility();
-        if (move.x != 0)
-        {
-            //motor.Peek().ChangeDirection(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
-        }
     }
     public override void ExecuteControlls()//this method goes into update in deff class that will execute it
     {
@@ -70,7 +59,7 @@ public class PlayerController : Controller
         }
         if (possesing)
         {
-            transform.position = target.transform.position;// overrides the rb
+            transform.position = target.transform.position;// overrides the rb and forces the ghost position to be on top of mob position since simply paranting does not work
         }
     }
 
