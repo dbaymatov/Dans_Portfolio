@@ -7,6 +7,7 @@ public class SwordsmanAbilities : Abilities
     [SerializeField] float attackRange;
     [SerializeField] Transform attackPoint;
     [SerializeField] float damage;
+    [SerializeField] Animator anim;
     public LayerMask enemyLayers;
     public override void Attack()
     {
@@ -32,17 +33,22 @@ public class SwordsmanAbilities : Abilities
     {
     }
 
-    public override void Ability1()//will use as attack method for swordsman
+    public override void Ability1()//will use as attack method for swordsman, ability can only be activated if player is on ground
     {
-        //animator.SetTrigger("Slash");     //will activate animator when ready   
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position,attackRange,enemyLayers);
-        foreach (Collider2D enemy in hitEnemies){
-            BotDeff botDeff = enemy.GetComponent<BotDeff>();
-            botDeff.TakeDamage(damage);
+        if (motor.IsGrounded())
+        {
+            motor.rb.velocity = Vector2.zero;//will kill any preveous movement to stop bot
+            anim.SetTrigger("Slash");//will activate animator 
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                BotDeff botDeff = enemy.GetComponent<BotDeff>();
+                botDeff.TakeDamage(damage);
+            }
         }
     }
 
-    
+
 
     public override void Ability2()
     {
@@ -54,8 +60,10 @@ public class SwordsmanAbilities : Abilities
 
     public override void Ability4()
     {
-    //draws Ability1 attack radious
-    }private void OnDrawGizmos(){
-        Gizmos.DrawWireSphere(attackPoint.position,attackRange);
+        //draws Ability1 attack radious
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }

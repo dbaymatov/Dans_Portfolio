@@ -61,6 +61,7 @@ public class PlayerController : Controller
         {
             transform.position = target.transform.position;// overrides the rb and forces the ghost position to be on top of mob position since simply paranting does not work
         }
+        motor.Peek().Animate();
     }
 
     public void AddMotor(Motor motor)//posses movement of mob

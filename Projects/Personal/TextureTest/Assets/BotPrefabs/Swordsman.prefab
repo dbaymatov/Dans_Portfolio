@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 151901713837803278}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
   m_LocalScale: {x: 2.7312, y: 3.63, z: 2.7312}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 311376849870751221}
   - component: {fileID: 4795010998624335703}
+  - component: {fileID: 5947578081548050363}
   m_Layer: 3
   m_Name: Alive
   m_TagString: Untagged
@@ -110,8 +111,8 @@ Transform:
   m_GameObject: {fileID: 1545023366236633247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.7312, y: 3.63, z: 2.7312}
+  m_LocalPosition: {x: 0, y: 0.32, z: 0}
+  m_LocalScale: {x: 1.2385, y: 1.2385, z: 1.2385}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 709908599133843571}
@@ -157,8 +158,8 @@ SpriteRenderer:
   m_SortingLayerID: 1911294907
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.42745098, g: 0.07832881, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 2da768cfa913ba8aeb5c245fe7378885, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -168,6 +169,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5947578081548050363
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545023366236633247}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2e112469e960b4dafbd37c0b0b2fc773, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2846601958126127128
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,9 +242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8ce029b3545f349aad53e3eb05cf61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  motor: {fileID: 0}
   attackRange: 3.07
   attackPoint: {fileID: 547912110194606614}
   damage: 100
+  anim: {fileID: 5947578081548050363}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 8
@@ -255,6 +279,7 @@ MonoBehaviour:
   energyRegen: 1
   durability: 200
   abilities: {fileID: 0}
+  motor: {fileID: 0}
   aliveSprite: {fileID: 1545023366236633247}
   deadSprite: {fileID: 151901713837803278}
   aliveDurability: 120
@@ -270,17 +295,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d10ed7cc28668198a6c797960d7e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookingRight: 0
+  moving: 0
+  falling: 0
+  rb: {fileID: 0}
+  groundBoxXsize: 2.82
+  groundBoxYsize: 3.35
+  groundBoxYpos: 2.54
   accelerationHorizontal: 200000
   accelerationVertical: 0
   maxSpeed: 10
-  groundBoxXsize: 2.82
-  groundBoxYsize: 3.35
-  groundBoxYpos: 2.33
   jumpForce: 700
   deadjumpForce: 700
   deadAccelerationV: 0
   deadAccelerationH: 150000
   deadMaxSpeed: 10
+  decelerationRate: 100
+  moveSensetivity: 0.1
+  attackPoint: {fileID: 7454147500082155969}
+  anim: {fileID: 5947578081548050363}
 --- !u!70 &7629653219319815133
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -313,7 +346,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0043640137, y: 0.024526596}
+  m_Offset: {x: -0.0043640137, y: 0.54}
   m_Size: {x: 2.5410614, y: 7.44}
   m_Direction: 0
 --- !u!50 &7799909643365131798
@@ -368,7 +401,7 @@ Transform:
   m_GameObject: {fileID: 7454147500082155969}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.77, y: 0.66, z: -0.15240636}
+  m_LocalPosition: {x: -2.77, y: 0.66, z: -0.15240636}
   m_LocalScale: {x: 0.42316252, y: 0.41985133, z: 1.5930204}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwordsmanDeff : BotDeff 
+public class SwordsmanDeff : BotDeff
 {
     private void Start()
     {
@@ -14,8 +14,13 @@ public class SwordsmanDeff : BotDeff
     }
     private void FixedUpdate()
     {
-        if(!possesd)//will stop controlling it self if possesd
+        if (!possesd)//will stop controlling it self if possesd
             controller.Peek().ExecuteMovement();
+    }
+    private void Update()
+    {
+        if (!possesd)//will stop controlling it self if possesd
+            controller.Peek().ExecuteControlls();
     }
 
 }

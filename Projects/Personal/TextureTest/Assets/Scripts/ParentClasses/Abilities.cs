@@ -15,4 +15,11 @@ public abstract class Abilities : MonoBehaviour
     public abstract void Ability3();
     public abstract void Ability4();
 
+    public Motor motor;
+
+    void Start()
+    {
+        motor = GetComponent<Motor>();
+    }
+
 }

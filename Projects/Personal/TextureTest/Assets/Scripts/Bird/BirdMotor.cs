@@ -10,23 +10,12 @@ public class BirdMotor : Motor
 {
     [SerializeField] float accelerationV;
     [SerializeField] float accelerationH;
-
     [SerializeField] float maxSpeed;
-    [SerializeField] float groundBoxXsize;
-    [SerializeField] float groundBoxYsize;
-    [SerializeField] float groundBoxYpos;
     [SerializeField] float jumpForce;
-
     [SerializeField] float deadjumpForce;
     [SerializeField] float deadAccelerationV;
     [SerializeField] float deadAccelerationH;
     [SerializeField] float deadMaxSpeed;
-
-    Rigidbody2D rb;
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
 
     //makes bird flap its wing causing it to move up
     public override void MoveVertical(Vector2 move)
@@ -63,7 +52,7 @@ public class BirdMotor : Motor
 
         if (move.x != 0)
         {
-            //ChangeDirection(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
+            ScaleVertical(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
         }
 
     }
@@ -76,13 +65,6 @@ public class BirdMotor : Motor
         rb.AddForce(new Vector2(0, jumpForce));
     }
 
-    //checks if there is collision mesh bellow
-    public bool IsGrounded()
-    {
-        if (Physics2D.BoxCast(transform.position, new Vector2(groundBoxXsize, groundBoxYsize), 0, -transform.up, groundBoxYpos))
-            return true;
-        return false;
-    }
     //replaces used parameters with the ones from undead state
     public override void BecomeUndead()
     {
@@ -91,12 +73,6 @@ public class BirdMotor : Motor
         accelerationH = deadAccelerationH;
 
         maxSpeed = deadMaxSpeed;
-    }
-
-    //displayes grounded detection box 
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireCube(transform.position - transform.up * groundBoxYpos, new Vector2(groundBoxXsize, groundBoxYsize));
     }
     public override void Animate()
     {

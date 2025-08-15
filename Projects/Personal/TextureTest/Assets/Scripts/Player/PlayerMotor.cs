@@ -7,7 +7,6 @@ public class PlayerMotor : Motor
     [SerializeField] float acceleration;
     [SerializeField] float maxSpeed;
 
-    [SerializeField] Rigidbody2D rb;
 
     public override void MoveVertical(Vector2 move)
     {

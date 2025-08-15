@@ -11,18 +11,13 @@ public class BotMotorTest : Motor
     [SerializeField] float accelerationHorizontal;
     [SerializeField] float accelerationVertical;
     [SerializeField] float maxSpeed;
-    [SerializeField] float groundBoxXsize;
-    [SerializeField] float groundBoxYsize;
-    [SerializeField] float groundBoxYpos;
     [SerializeField] float jumpForce;
-
     [SerializeField] float deadjumpForce;
     [SerializeField] float deadAccelerationV;
     [SerializeField] float deadAccelerationH;
 
     [SerializeField] float deadMaxSpeed;
 
-    Rigidbody2D rb;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -70,7 +65,7 @@ public class BotMotorTest : Motor
     //checks if touches ground and adds force to rb if touches ground
     public override void Jump()
     {
-        if (IsGrounded(1f))
+        if (IsGrounded())
         {
             rb.AddForce(new Vector2(0, jumpForce));
         }
@@ -86,16 +81,6 @@ public class BotMotorTest : Motor
     }
     public override void Animate()
     {
-    }
-    public bool IsGrounded(float distance)//checks if the player is colliding with groind
-    {
-        if (Physics2D.BoxCast(transform.position, new Vector2(groundBoxXsize, groundBoxYsize), 0, -transform.up, groundBoxYpos))
-            return true;
-        return false;
-    }
-    private void OnDrawGizmos()//draws ground checking box
-    {
-        Gizmos.DrawWireCube(transform.position - transform.up * groundBoxYpos, new Vector2(groundBoxXsize, groundBoxYsize));
     }
     public override void ExecuteMove(Vector2 move)//method passed to the bot deff class update function
     {
