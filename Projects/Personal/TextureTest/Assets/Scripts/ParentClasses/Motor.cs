@@ -6,6 +6,8 @@ public abstract class Motor : MonoBehaviour
     public bool moving;
     public bool falling;
     public Rigidbody2D rb;
+    public float horizontalInput;
+    [SerializeField] float decelerationRate;
     [SerializeField] float groundBoxXsize;
     [SerializeField] float groundBoxYsize;
     [SerializeField] float groundBoxYpos;
@@ -17,6 +19,8 @@ public abstract class Motor : MonoBehaviour
     public abstract void Jump();
     public abstract void BecomeUndead();
     public abstract void Animate();
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,6 +42,16 @@ public abstract class Motor : MonoBehaviour
         if (Physics2D.BoxCast(transform.position, new Vector2(groundBoxXsize, groundBoxYsize), 0, -transform.up, groundBoxYpos))
             return true;
         return false;
+    }
+    public void KillMomentum()//quickly slows down player when on ground
+    {
+        if (horizontalInput == 0 && IsGrounded())
+        {
+            Vector2 currentVelocity = rb.velocity;
+            currentVelocity.x = Mathf.Lerp(currentVelocity.x, 0f, Time.fixedDeltaTime * decelerationRate);
+            //currentVelocity.y = Mathf.Lerp(currentVelocity.x, 0f, Time.fixedDeltaTime * decelerationRate); //vertical deacceleration in case needed
+            rb.velocity = currentVelocity;
+        }
     }
     private void OnDrawGizmos()//draws ground checking box
     {

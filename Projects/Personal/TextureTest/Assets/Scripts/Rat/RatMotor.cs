@@ -28,7 +28,7 @@ public class RatMotor : Motor
     //makes rat walk on ground, 
     public override void MoveHorizontal(Vector2 move)
     {
-
+        horizontalInput = move.x;
         if (rb.velocity.x < maxSpeed && move.x > 0)
         {
             rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationH, 0));
@@ -41,7 +41,7 @@ public class RatMotor : Motor
         {
             ScaleVertical(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
         }
-
+        KillMomentum();
     }
     public override void SpecialMove()
     {
@@ -65,6 +65,23 @@ public class RatMotor : Motor
     }
     public override void Animate()
     {
+        if (horizontalInput != 0)//controls run/idle
+        {
+            anim.SetBool("Moving", true);
+        }
+        else
+        {
+            anim.SetBool("Moving", false);
+        }
+
+        if (!IsGrounded())//controlls fall animation
+        {
+            anim.SetBool("Falling", true);
+        }
+        else
+        {
+            anim.SetBool("Falling", false);
+        }
     }
     //method used in the update function in bot deff inherited script
     public override void ExecuteMove(Vector2 move)

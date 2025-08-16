@@ -16,12 +16,8 @@ public class SwordsmanMotor : Motor
     [SerializeField] float deadAccelerationV;
     [SerializeField] float deadAccelerationH;
     [SerializeField] float deadMaxSpeed;
-    [SerializeField] float decelerationRate;
     [SerializeField] float moveSensetivity;
     [SerializeField] GameObject attackPoint;
-
-    private float horizontalInput;
-
 
     public override void MoveHorizontal(Vector2 move)
     {
@@ -40,15 +36,7 @@ public class SwordsmanMotor : Motor
             if (lookingRight)
                 FlipAttackPoint(attackPoint.transform);
         }
-
-        if (move.x == 0 && IsGrounded())//quickly slows down player when on ground
-        {
-            Vector2 currentVelocity = rb.velocity;
-            currentVelocity.x = Mathf.Lerp(currentVelocity.x, 0f, Time.fixedDeltaTime * decelerationRate);
-            //currentVelocity.y = Mathf.Lerp(currentVelocity.x, 0f, Time.fixedDeltaTime * decelerationRate);
-            rb.velocity = currentVelocity;
-        }
-
+        KillMomentum();
     }
     public override void MoveVertical(Vector2 move)
     {
