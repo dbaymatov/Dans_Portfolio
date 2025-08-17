@@ -29,7 +29,7 @@ public class BirdMotor : Motor
     //makes bird fly and walk on ground, holding W,S will make glide or dive
     public override void MoveHorizontal(Vector2 move)
     {
-
+        horizontalInput = move.x;
         if (!IsGrounded())//when in flight will move max speed
         {
             if (rb.velocity.x < maxSpeed && move.x > 0)
@@ -54,7 +54,7 @@ public class BirdMotor : Motor
         {
             ScaleVertical(Math.Sign(move.x));//scales character by 1 or -1 depending on which direction it is going
         }
-
+        KillMomentum();
     }
     public override void SpecialMove()
     {
@@ -62,6 +62,7 @@ public class BirdMotor : Motor
     //adds force up 
     public override void Jump()
     {
+        anim.SetTrigger("Flap");
         rb.AddForce(new Vector2(0, jumpForce));
     }
 
@@ -76,7 +77,27 @@ public class BirdMotor : Motor
     }
     public override void Animate()
     {
+        if (horizontalInput != 0)//controls run/idle
+        {
+            anim.SetBool("Moving", true);
+        }
+        else
+        {
+            anim.SetBool("Moving", false);
+        }
+
+        if (!IsGrounded())//controlls fall animation
+        {
+            anim.SetBool("Flying", true);
+        }
+        else
+        {
+            anim.SetBool("Flying", false);
+        }
     }
+
+
+    
     //method used in the update function in bot deff inherited script
     public override void ExecuteMove(Vector2 move)
     {
