@@ -85,7 +85,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.51341677}
+  m_Offset: {x: 0, y: -0.63938475}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -96,7 +96,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.31, y: 1.2331667}
+  m_Size: {x: 3.01, y: 0.98123074}
   m_EdgeRadius: 0
 --- !u!50 &4544402982647373121
 Rigidbody2D:
@@ -111,9 +111,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.5
-  m_LinearDrag: 0.1
+  m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 2
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -186,7 +186,7 @@ MonoBehaviour:
   lookingRight: 0
   moving: 0
   falling: 0
-  rb: {fileID: 0}
+  rb: {fileID: 4544402982647373121}
   horizontalInput: 0
   decelerationRate: 10
   groundBoxXsize: 2.21
@@ -195,9 +195,9 @@ MonoBehaviour:
   anim: {fileID: 1389154264663732804}
   accelerationV: 0
   accelerationH: 50000
-  maxSpeed: 15
-  jumpForce: 450
-  deadjumpForce: 450
+  maxSpeed: 12.2
+  jumpForce: 300
+  deadjumpForce: 250
   deadAccelerationH: 40000
   deadAccelerationV: 15000
   deadMaxSpeed: 15
@@ -228,8 +228,8 @@ Transform:
   m_GameObject: {fileID: 3654541479031393744}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.68, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.35, y: -0.89, z: 0}
+  m_LocalScale: {x: 0.7041, y: 0.7041, z: 0.7041}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6442345364506805484}

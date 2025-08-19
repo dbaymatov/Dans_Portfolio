@@ -56,6 +56,7 @@ MonoBehaviour:
   energyRegen: 1
   durability: 200
   abilities: {fileID: 0}
+  motor: {fileID: 0}
   aliveSprite: {fileID: 9187596979297159991}
   deadSprite: {fileID: 9174669552630128775}
   aliveDurability: 120
@@ -83,16 +84,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9085685d3406c4a8c5804e45e35c4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accelerationV: 50000
-  accelerationH: 5000
-  maxSpeed: 30
+  lookingRight: 0
+  moving: 0
+  falling: 0
+  rb: {fileID: 0}
+  horizontalInput: 0
+  decelerationRate: 10
   groundBoxXsize: 2.21
   groundBoxYsize: 1.11
   groundBoxYpos: 1.03
+  anim: {fileID: 52482858846170518}
+  accelerationV: 17000
+  accelerationH: 50000
+  maxSpeed: 18
   jumpForce: 450
   deadjumpForce: 450
-  deadAccelerationH: 4000
-  deadAccelerationV: 40000
+  deadAccelerationV: 14000
+  deadAccelerationH: 40000
   deadMaxSpeed: 25
 --- !u!114 &-7423342799618366762
 MonoBehaviour:
@@ -106,6 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2b48157272b72869d9facbe1f3200f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  motor: {fileID: 0}
 --- !u!61 &3634062563405681409
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -121,7 +130,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 136
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -138,7 +147,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.38192987}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -149,7 +158,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.31, y: 2.26}
+  m_Size: {x: 2.31, y: 1.4961405}
   m_EdgeRadius: 0
 --- !u!50 &7004201951268680857
 Rigidbody2D:
@@ -272,6 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7282051182288924483}
   - component: {fileID: 2037056132053671758}
+  - component: {fileID: 52482858846170518}
   m_Layer: 3
   m_Name: Isometric Diamond
   m_TagString: Untagged
@@ -288,8 +298,8 @@ Transform:
   m_GameObject: {fileID: 9187596979297159991}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.1253, y: 3.7219, z: 1}
+  m_LocalPosition: {x: -0.29, y: -0.44, z: 0}
+  m_LocalScale: {x: 0.7224, y: 0.7224, z: 0.7224}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2078105548271523350}
@@ -335,7 +345,7 @@ SpriteRenderer:
   m_SortingLayerID: 1911294907
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3625043607559282579, guid: 19fb86013d8c24d6cb8410c0aadf30fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6f85eb4f054b1bd39b326a35ba7004a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -346,3 +356,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &52482858846170518
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9187596979297159991}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f36e4aa8d4f689219fa8f0fe0e3697a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

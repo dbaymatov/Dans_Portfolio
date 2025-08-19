@@ -299,9 +299,12 @@ MonoBehaviour:
   moving: 0
   falling: 0
   rb: {fileID: 0}
+  horizontalInput: 0
+  decelerationRate: 10
   groundBoxXsize: 2.82
   groundBoxYsize: 3.35
   groundBoxYpos: 2.54
+  anim: {fileID: 5947578081548050363}
   accelerationHorizontal: 200000
   accelerationVertical: 0
   maxSpeed: 10
@@ -310,10 +313,8 @@ MonoBehaviour:
   deadAccelerationV: 0
   deadAccelerationH: 150000
   deadMaxSpeed: 10
-  decelerationRate: 100
   moveSensetivity: 0.1
   attackPoint: {fileID: 7454147500082155969}
-  anim: {fileID: 5947578081548050363}
 --- !u!70 &7629653219319815133
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
