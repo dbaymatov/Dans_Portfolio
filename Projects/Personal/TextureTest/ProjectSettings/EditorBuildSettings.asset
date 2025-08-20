@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/CompositionTest.unity
     guid: 8259743b5e4f57942af423b8bc2be79e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Visual Showcase.unity
     guid: 7e40f03ae79be6f0fbc8e9396a90c63c
+  - enabled: 1
+    path: Assets/Scenes/Lvl1.unity
+    guid: 6e190af429a083bf8892cf8f5628e141
   m_configObjects: {}
