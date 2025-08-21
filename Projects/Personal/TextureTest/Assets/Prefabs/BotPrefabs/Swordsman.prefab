@@ -249,7 +249,7 @@ MonoBehaviour:
   anim: {fileID: 5947578081548050363}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 776
 --- !u!114 &8326756740650472476
 MonoBehaviour:
   m_ObjectHideFlags: 0

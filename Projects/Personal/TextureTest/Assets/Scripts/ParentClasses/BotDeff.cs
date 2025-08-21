@@ -14,33 +14,36 @@ public abstract class BotDeff : MonoBehaviour
     [SerializeField] GameObject deadSprite;
     [SerializeField] float aliveDurability;
 
-  
+
     public void Destroy()
     {
         gameObject.SetActive(false);
     }
-    public void TakeDamage(float damage){
+    public void TakeDamage(float damage)
+    {
         durability = durability - damage;
         CheckCondition();
     }
-    public void Die(){
+    public void Die()
+    {
         Motor motor = GetComponent<Motor>();
         alive = false;
         motor.BecomeUndead();
     }
     public void CheckCondition()
     {
-        //if durability is less then certain amount makes bot into dead state
-        if (durability < aliveDurability)
-        {
-            Die();
-            aliveSprite.SetActive(false);
-            deadSprite.SetActive(true);
-        }
         //once durability runs out removes mob
         if (durability < 1)
         {
             Destroy();
         }
+        //if durability is less then certain amount makes bot into dead state
+        else if (durability < aliveDurability)
+        {
+            Die();
+            aliveSprite.SetActive(false);
+            deadSprite.SetActive(true);
+        }
+
     }
 }
