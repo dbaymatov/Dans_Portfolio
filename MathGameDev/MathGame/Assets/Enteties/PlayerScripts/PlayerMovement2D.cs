@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,11 +13,20 @@ public class PlayerMovement2D : MonoBehaviour
     [SerializeField] float attackPointOffest;
     [SerializeField] LayerMask enemyLayers;
     [SerializeField] int damage;
+    [SerializeField] float hitStrngth;
     bool moving;
+    bool canMove;
+    bool canAttack;
     float hInput, vInput;
     Vector2 lookDirection = Vector2.down;
     enum Axis { Vertical, Horizontal, none }
     Axis lastPressedAxis = Axis.none;
+
+    void Start()
+    {
+        canMove = canAttack = true;
+
+    }
 
     void Update()
     {
@@ -35,66 +45,67 @@ public class PlayerMovement2D : MonoBehaviour
         {
             SetAttackPoint();//updates the direction at which player attack zone is pointing
         }
-
-        AnimationController();
+        ActivateAbilityController();
+        MovementAnimationController();
     }
 
     void FixedUpdate()
+    {
+        PlayerMove();
+
+    }
+
+    void PlayerMove()
     {
         hInput = Input.GetAxisRaw("Horizontal");
         vInput = Input.GetAxisRaw("Vertical");
 
         Vector2 inputDirection = GetMovementDirection().normalized;
 
-        if (rb.velocity.magnitude < maxSpeed)//max speed restriction
+        if (rb.velocity.magnitude < maxSpeed && canMove)//max speed restriction
         {
             rb.AddForce(inputDirection * acceleration * Time.deltaTime, ForceMode2D.Force);
         }
     }
 
-
-    void Attack()
+    void ActivateAbilityController()
     {
-        if (Input.GetKeyDown("1"))
+        if (Input.GetKeyDown("1") && canAttack)
         {
-            Debug.Log("key press 1");
-            //animator.SetTrigger("Slash");     //will activate animator when ready   
-            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-            foreach (Collider2D enemy in hitEnemies)
-            {
-                Debug.Log("dealed damage");
+            StartCoroutine(Attack());
+        }
 
-                BotHealth botDeff = enemy.GetComponent<BotHealth>();
+    }
+
+    IEnumerator Attack()
+    {
+        canAttack = false;
+        canMove = false;
+        animator.SetTrigger("Attack1");
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.isTrigger) continue;
+
+            HealthManager botDeff = enemy.GetComponent<HealthManager>();
+            if (botDeff is not null)
+            {
                 botDeff.TakeDamage(damage);
+                Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
+                Vector2 pushDirection = enemy.GetComponent<Transform>().position - transform.position;
+                enemyRb.AddForce(pushDirection * hitStrngth, ForceMode2D.Force);
             }
 
         }
+        yield return new WaitForSeconds(0.35f);
+        canAttack = true;
+        canMove = true;
 
-    }
-
-    void AnimationController()
-    {
-        Attack();
-        AbilityAnimationController();
-        MovementAnimationController();
-    }
-
-    //this method controllrs the ability animations given the input
-    void AbilityAnimationController()
-    {
-        //play attack animation
-        if (Input.GetKeyDown("1"))
-        {
-            animator.SetTrigger("Attack1");
-        }
     }
 
     //The if statments controll the movement animations, based on the input direction will play animation in according direction, in case the character is moving into will will not play animation
     void MovementAnimationController()
     {
-        // float hInput = Input.GetAxisRaw("Horizontal");
-        // float vInput = Input.GetAxisRaw("Vertical");
-
         Vector2 inputDirection = GetMovementDirection();
 
         if (inputDirection.magnitude > 0.1f && rb.velocity.magnitude > 0.1f)
@@ -117,7 +128,6 @@ public class PlayerMovement2D : MonoBehaviour
         //will take user input and based on acceleration variable will apply force on the character, untill it reaches max speed at which speed becomes constant
         //the if statements restrict player to movement in one direction at a time even if horizantal and vertical keys pressed at once,
         //will prioretise the latest key press direction
-
 
         Vector2 inputDirection = Vector2.zero;
 

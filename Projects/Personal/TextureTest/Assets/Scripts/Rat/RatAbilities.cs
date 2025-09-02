@@ -33,7 +33,6 @@ public class RatAbilities : Abilities
 
     public override void Ability1()//will use as attack method for swordsman
     {
-       
     }
 
     private void OnDrawGizmos(){

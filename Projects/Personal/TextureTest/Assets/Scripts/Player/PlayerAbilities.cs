@@ -34,9 +34,8 @@ public class PlayerAbilities : Abilities
 
     }
 
-    public override void Ability1()
+    public override void Ability1()//will use as attack method for swordsman
     {
-        Debug.Log("ability player 1 active");
     }
 
     public override void Ability2()

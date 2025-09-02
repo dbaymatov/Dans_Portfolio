@@ -33,12 +33,18 @@ public class SwordsmanAbilities : Abilities
     {
     }
 
-    public override void Ability1()//will use as attack method for swordsman, ability can only be activated if player is on ground
+    public override void Ability1()//will use as attack method for swordsman
     {
+        StartCoroutine(Slash());
+    }
+
+    IEnumerator Slash()
+    {
+        anim.SetTrigger("Slash");//will activate animator 
+        yield return new WaitForSecondsRealtime(0.5f);
         if (motor.IsGrounded())
         {
             motor.rb.velocity = Vector2.zero;//will kill any preveous movement to stop bot
-            anim.SetTrigger("Slash");//will activate animator 
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
             foreach (Collider2D enemy in hitEnemies)
             {
@@ -46,8 +52,9 @@ public class SwordsmanAbilities : Abilities
                 botDeff.TakeDamage(damage);
             }
         }
-    }
+        yield return new WaitForSecondsRealtime(0f);
 
+    }
 
 
     public override void Ability2()

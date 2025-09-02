@@ -7,22 +7,22 @@ public abstract class BotMotor : MonoBehaviour
 
     public Rigidbody2D rb;
     public float speed;
-    [SerializeField] Animator anim;
+    [SerializeField] public Animator anim;
+    [SerializeField] public Transform attackPoint;
+    [SerializeField] public float attackRange;
+    [SerializeField] public float attackPointOffest;
+    [SerializeField] public LayerMask enemyLayers;
+    [SerializeField] public int damage;
+    [SerializeField] public float hitStrngth;
+    public bool canAttack = true;
     bool moving;
 
     public abstract void Move(Vector2 movementVector);
+    public abstract IEnumerator Attack();
 
-
-    void Die()
+    private void OnDrawGizmos()
     {
-        gameObject.SetActive(false);
-    }
-
-    void Attack()
-    {
-        //TODO: implement atack
-
-        AttackAnim();
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
     public void AttackAnim()
@@ -41,6 +41,9 @@ public abstract class BotMotor : MonoBehaviour
             moving = false;
         }
         anim.SetBool("Moving", moving);
-        
+
     }
+
+    public abstract bool CanDealDamage();
+
 }
