@@ -9,8 +9,6 @@ public class PlayerDeff : BotDeff
         controller.Push(GetComponent<Controller>()); //player controll
         alive = true;
         possesd = false;
-        energyRegen = durability = 0;
-        durability = 10;
     }
 
     // Update is called once per frame
@@ -21,7 +19,21 @@ public class PlayerDeff : BotDeff
     }
     private void Update()
     {
+        //Debug.Log("player update");
         controller.Peek().ExecuteControlls();//controlls of the abilities
 
+        if(!controller.Peek().possesing) 
+            RegenEnergy();
+        else
+
+
+        //Debug.Log(energyRegen + " Current energy"+ currentEnergy);
+        if (currentEnergy < 0)
+        {
+            //Debug.Log("Game Over");
+        }
+
     }
+
+
 }

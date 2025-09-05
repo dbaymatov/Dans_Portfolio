@@ -10,10 +10,10 @@ public class PlayerController : Controller
     /// Script used to controll player ghost character, it features player movement in ghost state and methods used to posses and unposses mobs.
     /// It uses collider triggers to detect which mobs are in range to be possesed and adds them to the list, the mob which is closest to the ghost is the top candidate
     /// </summary>
+    BotDeff targetDeff;
     List<GameObject> targetList = new List<GameObject>();//list of mobs in posses range
     GameObject target; //closest mob in the list to posses
     LayerMask initialLayer;//temp variable used to set the bot back to original layer once done possesing
-    bool possesing=false;
     //collects inputs from player and executes them
     public override void ExecuteMovement()//this method goes into fixed update in deff class that will execute it
     {
@@ -110,6 +110,7 @@ public class PlayerController : Controller
         BotDeff def = bot.GetComponent<BotDeff>();//changes layer to fiendly so to not get attacked by friendly mobs and itself
         def.possesd = true;
         possesing = true;
+        targetDeff = bot.GetComponent<BotDeff>();
         initialLayer = bot.layer;
         bot.layer = LayerMask.NameToLayer("Friendly");
     }
@@ -122,6 +123,7 @@ public class PlayerController : Controller
             RemoveMotor();
             RemoveAbility();
             possesing = false;
+            targetDeff = null;
         }
     }
     private void OnTriggerEnter2D(Collider2D other)//if its not possesing anything targets the bot it collides with

@@ -12,14 +12,4 @@ public class BirdDeff : BotDeff
         possesd = false;
         energyRegen = durability = 200;
     }
-    private void FixedUpdate()
-    {
-        if (!possesd)//will stop controlling it self if possesd
-            controller.Peek().ExecuteMovement();
-    }
-    private void Update()
-    {
-        controller.Peek().ExecuteControlls();
-    }
-
 }
