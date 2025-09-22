@@ -79,7 +79,6 @@ public abstract class BotDeff : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log("deff update");
 
         if (!possesd)//will stop controlling it self if possesd
             controller.Peek().ExecuteControlls();
