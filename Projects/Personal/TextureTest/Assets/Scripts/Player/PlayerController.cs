@@ -113,6 +113,8 @@ public class PlayerController : Controller
         targetDeff = bot.GetComponent<BotDeff>();
         initialLayer = bot.layer;
         bot.layer = LayerMask.NameToLayer("Friendly");
+        //Adds reference to the singleton energy manager
+        EnergyManager.Instance.possesedMob = bot.GetComponent<BotDeff>();
     }
     private void Unposses()//clears bots motor and abilites from the player control something othervise does nothing
     {
@@ -124,6 +126,8 @@ public class PlayerController : Controller
             RemoveAbility();
             possesing = false;
             targetDeff = null;
+            EnergyManager.Instance.possesedMob = null;
+
         }
     }
     private void OnTriggerEnter2D(Collider2D other)//if its not possesing anything targets the bot it collides with
