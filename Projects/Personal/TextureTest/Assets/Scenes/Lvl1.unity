@@ -7646,6 +7646,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1687686451094646527, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+      propertyPath: maxEnergy
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687686451094646527, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+      propertyPath: energyRegen
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687686451094646527, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+      propertyPath: currentEnergy
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687686451094646527, guid: 7c32de7986e319441aa3333dba446797, type: 3}
+      propertyPath: aliveDurability
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2846601958126127128, guid: 7c32de7986e319441aa3333dba446797, type: 3}
       propertyPath: m_Name
       value: Swordsman (1)
@@ -10167,15 +10183,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2660772539982097940, guid: 1865a42b4935b79ed909b19bef455d06, type: 3}
       propertyPath: maxEnergy
-      value: 50
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660772539982097940, guid: 1865a42b4935b79ed909b19bef455d06, type: 3}
+      propertyPath: durability
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2660772539982097940, guid: 1865a42b4935b79ed909b19bef455d06, type: 3}
       propertyPath: energyRegen
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2660772539982097940, guid: 1865a42b4935b79ed909b19bef455d06, type: 3}
       propertyPath: currentEnergy
-      value: 200
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2660772539982097940, guid: 1865a42b4935b79ed909b19bef455d06, type: 3}
       propertyPath: aliveDurability
@@ -13328,16 +13348,24 @@ PrefabInstance:
       value: 648
       objectReference: {fileID: 0}
     - target: {fileID: 7240254783145337149, guid: 62765445ae5f34e0d818ac8d8f04e327, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1475655056}
+    - target: {fileID: 7240254783145337149, guid: 62765445ae5f34e0d818ac8d8f04e327, type: 3}
       propertyPath: maxEnergy
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7240254783145337149, guid: 62765445ae5f34e0d818ac8d8f04e327, type: 3}
+      propertyPath: healthBar2
+      value: 
+      objectReference: {fileID: 325307440}
+    - target: {fileID: 7240254783145337149, guid: 62765445ae5f34e0d818ac8d8f04e327, type: 3}
       propertyPath: energyRegen
-      value: -5
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 7240254783145337149, guid: 62765445ae5f34e0d818ac8d8f04e327, type: 3}
       propertyPath: currentEnergy
-      value: 1000000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7475640160920219701, guid: 62765445ae5f34e0d818ac8d8f04e327, type: 3}
       propertyPath: m_LocalPosition.x

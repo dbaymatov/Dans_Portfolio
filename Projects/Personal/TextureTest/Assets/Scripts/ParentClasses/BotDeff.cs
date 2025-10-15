@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 public abstract class BotDeff : MonoBehaviour
 {
     public bool alive;
@@ -90,7 +90,7 @@ public abstract class BotDeff : MonoBehaviour
         }
         Debug.Log("absorbing -tive energy"+(-energyRegen));
 
-        return -energyRegen; //if not alive will send negative energy regen increasing energy loss to player for possesing dead mob
+        return -energyRegen*Time.deltaTime; //if not alive will send negative energy regen increasing energy loss to player for possesing dead mob
     }
 
     public void ReciveEnergy(float energy)

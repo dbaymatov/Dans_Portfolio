@@ -42,7 +42,7 @@ public class EnergyManager : MonoBehaviour
                 }
                 else
                 {
-                    playerDeff.currentEnergy += possesedMob.LoseEnergy(neededEnergy);//when player energy fills up and is just maintaining its high levels without wasting extra
+                    playerDeff.currentEnergy += possesedMob.LoseEnergy(neededEnergy*Time.deltaTime);//when player energy fills up and is just maintaining its high levels without wasting extra
                     Debug.Log("slow burn");
                 }
             }
