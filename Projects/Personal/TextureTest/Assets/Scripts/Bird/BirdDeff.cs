@@ -10,6 +10,5 @@ public class BirdDeff : BotDeff
         abilities = GetComponent<Abilities>();
         alive = true;
         possesd = false;
-        energyRegen = durability = 200;
     }
 }

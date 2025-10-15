@@ -34,10 +34,7 @@ public class BirdAbilities : Abilities
     public override void Ability1()//will use as attack method for swordsman
     {
     }
-
-    private void OnDrawGizmos(){
-    }
-
+    
     public override void Ability2()
     {
     }
@@ -48,5 +45,7 @@ public class BirdAbilities : Abilities
 
     public override void Ability4()
     {
+    }
+    private void OnDrawGizmos(){
     }
 }

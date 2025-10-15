@@ -10,8 +10,6 @@ public class RatDeff : BotDeff
         abilities = GetComponent<Abilities>();
         alive = true;
         possesd = false;
-        energyRegen = 10;
-        durability = 200;
     }
 
 }
