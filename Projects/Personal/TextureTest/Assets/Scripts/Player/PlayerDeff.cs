@@ -6,8 +6,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class PlayerDeff : BotDeff
 {
-    public UnityEngine.UI.Image healthBar;
-    public UnityEngine.UI.Image healthBar2;
+    public UnityEngine.UI.Image playerEnergyBar;
+    //public UnityEngine.UI.Image healthBar2;
 
     private void Start()
     {
@@ -44,9 +44,7 @@ public class PlayerDeff : BotDeff
     }
     void HealthBarManager()
     {
-        healthBar.fillAmount = Mathf.Clamp(currentEnergy / maxEnergy, 0, 1);
-        healthBar2.fillAmount = Mathf.Clamp(currentEnergy / maxEnergy, 0, 1);
-
+        playerEnergyBar.fillAmount = Mathf.Clamp(currentEnergy / maxEnergy, 0, 1);
     }
 
 

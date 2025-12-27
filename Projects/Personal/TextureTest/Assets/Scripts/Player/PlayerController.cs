@@ -132,6 +132,7 @@ public class PlayerController : Controller
     }
     private void OnTriggerEnter2D(Collider2D other)//if its not possesing anything targets the bot it collides with
     {
+        if(other.gameObject.layer == LayerMask.NameToLayer("Bot"))
         targetList.Add(other.gameObject);
     }
     private void OnTriggerExit2D(Collider2D collision)//if it not possesing anything removes the target it collided with

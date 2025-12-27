@@ -7,14 +7,17 @@ public abstract class BotDeff : MonoBehaviour
     public bool alive;
     public bool possesd;
     public float maxEnergy, energyRegen, currentEnergy;
-    public float durability;
+    public float maxDurability, durability;
     public Stack<Controller> controller = new Stack<Controller>();
     public Abilities abilities;
     public Motor motor;
     [SerializeField] GameObject aliveSprite;
     [SerializeField] GameObject deadSprite;
     [SerializeField] float aliveDurability;
+    [SerializeField] Halthbar healthbar;
+    [SerializeField] EnergyBar energyBar;
 
+    [SerializeField] Color deadColor;
 
     public void Destroy()
     {
@@ -22,7 +25,7 @@ public abstract class BotDeff : MonoBehaviour
     }
     public void TakeDamage(float damage)
     {
-        durability = durability - damage;
+        durability -= damage;
         CheckCondition();
     }
     public void Die()
@@ -35,17 +38,29 @@ public abstract class BotDeff : MonoBehaviour
     }
     public void CheckCondition()
     {
+        //updates health/energy ui
+        if (healthbar != null)
+        {
+            healthbar.SetHealth(durability - aliveDurability, maxDurability - aliveDurability);
+        }
+        if (energyBar != null)
+        {
+            energyBar.SetEnergy(currentEnergy, maxEnergy);
+        }
+
         //once durability runs out removes mob
         if (durability < 1)
         {
-            Destroy();
+            gameObject.SetActive(false);
         }
         //if durability is less then certain amount makes bot into dead state
         else if (durability < aliveDurability)
         {
             Die();
-            aliveSprite.SetActive(false);
-            deadSprite.SetActive(true);
+            aliveSprite.GetComponent<SpriteRenderer>().color = deadColor;
+            currentEnergy = 0;
+            //aliveSprite.SetActive(false);
+            //deadSprite.SetActive(true);
         }
     }
     public virtual void RegenEnergy()//will regen mob energy if alive and current energy does not exceed max energy
@@ -88,9 +103,7 @@ public abstract class BotDeff : MonoBehaviour
                 return absorbRate;
             }
         }
-        Debug.Log("absorbing -tive energy"+(-energyRegen));
-
-        return -energyRegen*Time.deltaTime; //if not alive will send negative energy regen increasing energy loss to player for possesing dead mob
+        return -energyRegen * Time.deltaTime; //if not alive will send negative energy regen increasing energy loss to player for possesing dead mob
     }
 
     public void ReciveEnergy(float energy)
@@ -105,7 +118,6 @@ public abstract class BotDeff : MonoBehaviour
     }
     private void Update()
     {
-
         if (!possesd)//will stop controlling it self if possesd
             controller.Peek().ExecuteControlls();
 

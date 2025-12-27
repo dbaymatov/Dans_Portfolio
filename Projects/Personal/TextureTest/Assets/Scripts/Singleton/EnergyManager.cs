@@ -8,7 +8,7 @@ public class EnergyManager : MonoBehaviour
 
     public BotDeff possesedMob;
     [SerializeField] private float absorbRate;
-    public BotDeff playerDeff;
+    BotDeff playerDeff;
 
     void Awake()
     {
@@ -19,6 +19,7 @@ public class EnergyManager : MonoBehaviour
         }
 
         Instance = this;
+        playerDeff = GameObject.FindWithTag("Player").GetComponent<BotDeff>();
     }
 
     void Update()
@@ -42,14 +43,9 @@ public class EnergyManager : MonoBehaviour
                 }
                 else
                 {
-                    playerDeff.currentEnergy += possesedMob.LoseEnergy(neededEnergy*Time.deltaTime);//when player energy fills up and is just maintaining its high levels without wasting extra
-                    Debug.Log("slow burn");
+                    playerDeff.currentEnergy += possesedMob.LoseEnergy(neededEnergy * Time.deltaTime);//when player energy fills up and is just maintaining its high levels without wasting extra
                 }
             }
-
-        }
-        else//potential temp else, can be moved to player deff script
-        {
 
         }
     }
@@ -59,5 +55,24 @@ public class EnergyManager : MonoBehaviour
         playerDeff.currentEnergy += playerDeff.energyRegen * Time.deltaTime;
         if (playerDeff.currentEnergy > playerDeff.maxEnergy)//in case current energy exceeds the acceptable levels of energy
             playerDeff.currentEnergy = playerDeff.maxEnergy;
+    }
+
+    public void GiveEnergy(float energy)
+    {
+        if (energy > playerDeff.maxEnergy)
+            playerDeff.currentEnergy = playerDeff.maxEnergy;
+        else
+            playerDeff.currentEnergy += energy;
+
+
+    }
+    public void GiveEnergyBot(float energy)
+    {
+        if (energy > possesedMob.maxEnergy)
+            possesedMob.currentEnergy = possesedMob.maxEnergy;
+        else
+            possesedMob.currentEnergy += energy;
+
+
     }
 }
