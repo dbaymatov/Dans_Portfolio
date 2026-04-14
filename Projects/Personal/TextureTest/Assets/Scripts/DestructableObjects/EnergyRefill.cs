@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class EnergyRefill : MonoBehaviour
 {
-    [SerializeField]float energy;
-    //public static EnergyManager eg;
-
+    [SerializeField] float energy;
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        Debug.Log("coll detected");
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Friendly"))
+        {
+            if (collision.gameObject.GetComponent<BotDeff>().possesd)
+            {
+                EnergyManager.Instance.GiveEnergyBot(energy);
+                collision.gameObject.GetComponent<BotDeff>().currentEnergy = collision.gameObject.GetComponent<BotDeff>().maxEnergy;// refils bot energy also to max
+                gameObject.SetActive(false);
+                Debug.Log("give energy to bot");
+
+            }
+
+        }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             EnergyManager.Instance.GiveEnergy(energy);
+            Debug.Log("give energy to player");
         }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("Friendly"))
-        {
-            Debug.Log("Bot Detected");
-            if (collision.gameObject.GetComponent<BotDeff>().possesd)
-                EnergyManager.Instance.GiveEnergyBot(energy);
-        }
-
     }
 }
