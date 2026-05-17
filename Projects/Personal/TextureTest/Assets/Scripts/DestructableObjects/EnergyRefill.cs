@@ -23,6 +23,7 @@ public class EnergyRefill : MonoBehaviour
         else if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             EnergyManager.Instance.GiveEnergy(energy);
+            gameObject.SetActive(false);
             Debug.Log("give energy to player");
         }
     }

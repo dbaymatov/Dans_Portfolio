@@ -7,7 +7,7 @@ using UnityEngine.Rendering.Universal;
 
 public class StarTwinkle : MonoBehaviour
 {
-    [SerializeField] Light2D light;
+    [SerializeField] Light2D mylight;
     [SerializeField] float x;
     [SerializeField] float y;
     float intensity;
@@ -15,13 +15,14 @@ public class StarTwinkle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        mylight = GetComponent<Light2D>();
         random = UnityEngine.Random.Range(1, 4);
-        intensity = light.intensity;
+        intensity = mylight.intensity;
     }
 
     // Update is called once per frame
     void Update()
     {
-        light.intensity = Math.Abs(y * math.cos(random + intensity + Time.fixedTime / x));
+        mylight.intensity = Math.Abs(y * math.cos(random + intensity + Time.fixedTime / x));
     }
 }

@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class WinZone : MonoBehaviour
 {
 
     [SerializeField] GameObject winScreen;
+    [SerializeField] int sceneIndex;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +17,14 @@ public class WinZone : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            winScreen.SetActive(true);
-            Time.timeScale = 0;
+            SceneManager.LoadScene(sceneIndex);
+
+            //winScreen.SetActive(true);
+            //Time.timeScale = 0;
         }
     }
 }
