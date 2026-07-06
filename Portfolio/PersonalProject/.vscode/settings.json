@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "TextureTest.sln"
+    "dotnet.defaultSolution": "PersonalProject.sln"
 }
