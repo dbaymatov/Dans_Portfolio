@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SwordsmanAbilities : Abilities
@@ -8,7 +9,7 @@ public class SwordsmanAbilities : Abilities
     [SerializeField] Transform attackPoint;
     [SerializeField] float damage;
     [SerializeField] Animator anim;
-    public LayerMask enemyLayers;
+    bool ability1 = true;
     public override void Attack()
     {
     }
@@ -40,20 +41,32 @@ public class SwordsmanAbilities : Abilities
 
     IEnumerator Slash()
     {
-        anim.SetTrigger("Slash");//will activate animator 
-        yield return new WaitForSecondsRealtime(0.5f);
-        if (motor.IsGrounded())
+
+        if (motor.IsGrounded() && ability1)
         {
+            ability1 = false;
+            motor.canMove = false;
+            motor.FullStop();
+            anim.SetTrigger("Slash");//will activate animator 
+            yield return new WaitForSecondsRealtime(0.5f);
             motor.rb.velocity = Vector2.zero;//will kill any preveous movement to stop bot
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
             foreach (Collider2D enemy in hitEnemies)
             {
+                if(enemy.gameObject == gameObject)//prevents self destruction
+                {
+                    continue;
+                }
+
                 BotDeff botDeff = enemy.GetComponent<BotDeff>();
                 botDeff.TakeDamage(damage);
+                Debug.Log(enemy.gameObject.name);
             }
-        }
-        yield return new WaitForSecondsRealtime(0f);
+            motor.canMove = true;
+            ability1 = true;
+            yield return new WaitForSecondsRealtime(0f);
 
+        }
     }
 
 

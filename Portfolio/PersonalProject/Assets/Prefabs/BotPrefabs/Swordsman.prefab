@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 1687686451094646527}
   - component: {fileID: 3899222713783717837}
   - component: {fileID: 7629653219319815133}
+  - component: {fileID: 3472506258461002976}
   - component: {fileID: 7799909643365131798}
   m_Layer: 3
   m_Name: Swordsman
@@ -482,14 +483,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8ce029b3545f349aad53e3eb05cf61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motor: {fileID: 0}
-  attackRange: 3.07
-  attackPoint: {fileID: 547912110194606614}
-  damage: 50
-  anim: {fileID: 5947578081548050363}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 776
+    m_Bits: 896
+  motor: {fileID: 0}
+  attackRange: 3.71
+  attackPoint: {fileID: 547912110194606614}
+  damage: 25
+  anim: {fileID: 5947578081548050363}
 --- !u!114 &8326756740650472476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,6 +504,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   possesing: 0
+  detectionDistance: 13.78
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  attackRange: 5.51
+  deaggroDistance: 40.61
+  currentState: 0
 --- !u!114 &1687686451094646527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,21 +552,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookingRight: 0
   moving: 0
+  canMove: 0
   falling: 0
-  rb: {fileID: 0}
+  rb: {fileID: 7799909643365131798}
   horizontalInput: 0
   decelerationRate: 10
   groundBoxXsize: 2.82
   groundBoxYsize: 3.35
   groundBoxYpos: 2.54
   anim: {fileID: 5947578081548050363}
-  accelerationHorizontal: 200000
+  accelerationHorizontal: 5000
   accelerationVertical: 0
   maxSpeed: 10
   jumpForce: 700
   deadjumpForce: 700
   deadAccelerationV: 0
-  deadAccelerationH: 150000
+  deadAccelerationH: 1000
   deadMaxSpeed: 10
   moveSensetivity: 0.1
   attackPoint: {fileID: 7454147500082155969}
@@ -597,6 +606,41 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0043640137, y: 0.54}
   m_Size: {x: 2.5410614, y: 7.44}
   m_Direction: 0
+--- !u!58 &3472506258461002976
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2846601958126127128}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 16255
+  m_LayerOverridePriority: 10
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.42, y: 1.11}
+  serializedVersion: 2
+  m_Radius: 4.79
 --- !u!50 &7799909643365131798
 Rigidbody2D:
   serializedVersion: 4
@@ -1037,7 +1081,7 @@ Transform:
   m_GameObject: {fileID: 7454147500082155969}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.77, y: 0.66, z: -0.15240636}
+  m_LocalPosition: {x: -2.76, y: 0.43, z: -0.15240636}
   m_LocalScale: {x: 0.42316252, y: 0.41985133, z: 1.5930204}
   m_ConstrainProportionsScale: 0
   m_Children: []

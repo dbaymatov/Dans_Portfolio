@@ -14,6 +14,8 @@ public abstract class Abilities : MonoBehaviour
     public abstract void Ability2();
     public abstract void Ability3();
     public abstract void Ability4();
+    public LayerMask enemyLayers;
+
 
     public Motor motor;
 

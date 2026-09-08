@@ -15,11 +15,11 @@ TagManager:
   - Player
   - Friendly
   - DestructableBlockageForPlayerAndMobs
-  - DestructableBlockageForMovs
+  - DestructableBlockageForMobs
   - DestructableBlockageForGhost
-  - 
-  - 
-  - 
+  - UndestructableBlockageForPlayerAndMobs
+  - UndestructableBlockageForMobs
+  - UndestructableBlockageForGhost
   - 
   - 
   - 

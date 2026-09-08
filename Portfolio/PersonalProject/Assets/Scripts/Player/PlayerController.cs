@@ -14,6 +14,8 @@ public class PlayerController : Controller
     List<GameObject> targetList = new List<GameObject>();//list of mobs in posses range
     GameObject target; //closest mob in the list to posses
     LayerMask initialLayer;//temp variable used to set the bot back to original layer once done possesing
+    LayerMask initialTargets;//temp stores the enemy layers of the bot
+
     //collects inputs from player and executes them
     public override void ExecuteMovement()//this method goes into fixed update in deff class that will execute it
     {
@@ -113,27 +115,33 @@ public class PlayerController : Controller
         targetDeff = bot.GetComponent<BotDeff>();
         initialLayer = bot.layer;
         bot.layer = LayerMask.NameToLayer("Friendly");
+        initialTargets = bot.GetComponent<Abilities>().enemyLayers;
+        bot.GetComponent<Abilities>().enemyLayers = GetComponent<Abilities>().enemyLayers;//makes players enemeies bot enemeies
         //Adds reference to the singleton energy manager
         EnergyManager.Instance.possesedMob = bot.GetComponent<BotDeff>();
     }
-    private void Unposses()//clears bots motor and abilites from the player control something othervise does nothing
+    public void Unposses()//clears bots motor and abilites from the player control something othervise does nothing
     {
         if (possesing)
         {
             target.GetComponent<BotDeff>().possesd = false;
             target.layer = initialLayer;//changes layer back to bot
+            target.GetComponent<Abilities>().enemyLayers = initialTargets;
             RemoveMotor();
             RemoveAbility();
             possesing = false;
             targetDeff = null;
             EnergyManager.Instance.possesedMob = null;
-
         }
     }
+
+
+
+
     private void OnTriggerEnter2D(Collider2D other)//if its not possesing anything targets the bot it collides with
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Bot"))
-        targetList.Add(other.gameObject);
+        if (other.gameObject.layer == LayerMask.NameToLayer("Bot"))
+            targetList.Add(other.gameObject);
     }
     private void OnTriggerExit2D(Collider2D collision)//if it not possesing anything removes the target it collided with
     {

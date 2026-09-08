@@ -47,7 +47,12 @@ public class EnergyManager : MonoBehaviour
                 }
             }
 
+            if (!possesedMob.isActiveAndEnabled)//if mob gets completly destroyed will kick player out of it
+            {
+                playerDeff.gameObject.GetComponent<PlayerController>().Unposses();
+            }
         }
+
     }
 
     void PlayerEnergyDecay()

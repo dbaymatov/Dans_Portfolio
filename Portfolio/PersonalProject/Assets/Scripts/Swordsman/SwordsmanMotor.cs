@@ -19,24 +19,34 @@ public class SwordsmanMotor : Motor
     [SerializeField] float moveSensetivity;
     [SerializeField] GameObject attackPoint;
 
+    void Start()
+    {
+        canMove = true;
+    }
     public override void MoveHorizontal(Vector2 move)
     {
+        move.Normalize();
         horizontalInput = move.x;
-
-        if (rb.velocity.x < maxSpeed && move.x > 0)
+        if (canMove)
         {
+            {
+                if (rb.velocity.x < maxSpeed && move.x > 0)
+                {
 
-            rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationHorizontal, 0));
-            if (!lookingRight)
-                FlipAttackPoint(attackPoint.transform);
+                    rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationHorizontal, 0));
+                    if (!lookingRight)
+                        FlipAttackPoint(attackPoint.transform);
+                }
+                if (rb.velocity.x > -maxSpeed && move.x < 0)
+                {
+                    rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationHorizontal, 0));
+                    if (lookingRight)
+                        FlipAttackPoint(attackPoint.transform);
+                }
+                KillMomentum();
+            }
         }
-        if (rb.velocity.x > -maxSpeed && move.x < 0)
-        {
-            rb.AddForce(new Vector2(move.x * Time.deltaTime * accelerationHorizontal, 0));
-            if (lookingRight)
-                FlipAttackPoint(attackPoint.transform);
-        }
-        KillMomentum();
+
     }
     public override void MoveVertical(Vector2 move)
     {
@@ -86,8 +96,9 @@ public class SwordsmanMotor : Motor
     //Contains animation logic to play movement type animation based on the player input, speed of bot and grounded conditional, this method is passed to bot deff class update function
     public override void Animate()
     {
+        
         //run and idle logic
-        if (horizontalInput != 0 && IsGrounded())//playes run animation
+        if (horizontalInput != 0 && IsGrounded() && canMove)//playes run animation
         {
             anim.SetBool("Moving", true);
             if (lookingRight)
@@ -139,7 +150,7 @@ public class SwordsmanMotor : Motor
                 anim.SetBool("Moving", false);//playes idle
             }
         }
-        
+
     }
 
 }

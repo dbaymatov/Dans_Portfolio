@@ -4,6 +4,8 @@ public abstract class Motor : MonoBehaviour
 {
     public bool lookingRight = false;
     public bool moving;
+    public bool canMove;
+
     public bool falling;
     public Rigidbody2D rb;
     public float horizontalInput;
@@ -43,15 +45,18 @@ public abstract class Motor : MonoBehaviour
             return true;
         return false;
     }
-    public void KillMomentum()//quickly slows down player when on ground
+    public void KillMomentum()//quickly slows down player when on ground if there is no horizontal input and is grounded
     {
         if (horizontalInput == 0 && IsGrounded())
         {
             Vector2 currentVelocity = rb.velocity;
             currentVelocity.x = Mathf.Lerp(currentVelocity.x, 0f, Time.fixedDeltaTime * decelerationRate);
-            //currentVelocity.y = Mathf.Lerp(currentVelocity.x, 0f, Time.fixedDeltaTime * decelerationRate); //vertical deacceleration in case needed
             rb.velocity = currentVelocity;
         }
+    }
+    public void FullStop()//instant stop of the player
+    {
+            rb.velocity = Vector2.zero;
     }
     private void OnDrawGizmos()//draws ground checking box
     {
